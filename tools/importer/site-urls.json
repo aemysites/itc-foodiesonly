@@ -1,0 +1,635 @@
+{
+  "originUrl": "https://foodiesonly.in",
+  "aborted": false,
+  "lastCrawled": "https://foodiesonly.in/",
+  "urls": [
+    {
+      "url": "https://foodiesonly.in/",
+      "source": "CRAWL",
+      "targetPath": "/",
+      "id": "1aae906803fa7da20c8c26a6045d02b7002a0fca"
+    },
+    {
+      "url": "https://foodiesonly.in/about-us",
+      "source": "CRAWL",
+      "targetPath": "/about-us",
+      "id": "33ed8456c3354067e38240dc66877a671e25bc02"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs",
+      "source": "CRAWL",
+      "targetPath": "/blogs",
+      "id": "5e9f8a03ac9e47e68d7b6321e4094db25bf714d3"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/5-omelette-variations-from-across-india-for-breakfast",
+      "source": "CRAWL",
+      "targetPath": "/blogs/5-omelette-variations-from-across-india-for-breakfast",
+      "id": "40936d8a70b428f2377a8b6b2caf25d8b94614c1"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/all-natural-fusion-sweets-your-gym-bro-will-love",
+      "source": "CRAWL",
+      "targetPath": "/blogs/all-natural-fusion-sweets-your-gym-bro-will-love",
+      "id": "439312aff97e0d860f9b80f6ed3360e00aa2ccf0"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/bebinca-goan-dessert-layers-of-luxury",
+      "source": "CRAWL",
+      "targetPath": "/blogs/bebinca-goan-dessert-layers-of-luxury",
+      "id": "e53e3fadf74f94bfb82145b793d3c66523a8204d"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/chaat-street-food-guilt-free-with-a-millet-makeover",
+      "source": "CRAWL",
+      "targetPath": "/blogs/chaat-street-food-guilt-free-with-a-millet-makeover",
+      "id": "66bf081e56a59a81afcdf50165b0498089022cbf"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/chia-pudding-breakfast-that-taste-like-desert",
+      "source": "CRAWL",
+      "targetPath": "/blogs/chia-pudding-breakfast-that-taste-like-desert",
+      "id": "1b013a961bda77a67df2d57ff8022a25df3512aa"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/childrens-day-how-to-make-food-look-like-fun-and-still-be-nutritious",
+      "source": "CRAWL",
+      "targetPath": "/blogs/childrens-day-how-to-make-food-look-like-fun-and-still-be-nutritious",
+      "id": "5cb03a2714b7005c9206f7e7bbb4b5667f21a2e5"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/childrens-day-making-junk-food-healthier-without-your-kids-noticing-the-difference",
+      "source": "CRAWL",
+      "targetPath": "/blogs/childrens-day-making-junk-food-healthier-without-your-kids-noticing-the-difference",
+      "id": "f772be811c98ac762132c44d1b8ad4c69fa7949c"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/coffee-based-dessert-discovering-coffee-magic-in-desserts",
+      "source": "CRAWL",
+      "targetPath": "/blogs/coffee-based-dessert-discovering-coffee-magic-in-desserts",
+      "id": "5f3c24754d9ae9bd32e43921c334f1a280f6cac3"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/cooking-goat-liver-to-perfection",
+      "source": "CRAWL",
+      "targetPath": "/blogs/cooking-goat-liver-to-perfection",
+      "id": "7ad86401eeb41e36c01ff962c812aa30cc40f9e8"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/cooking-tips-and-tricks",
+      "source": "CRAWL",
+      "targetPath": "/blogs/cooking-tips-and-tricks",
+      "id": "48c9f60691ae89cc4222351558501c390311005f"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/cuisines",
+      "source": "CRAWL",
+      "targetPath": "/blogs/cuisines",
+      "id": "c666b4c3fae6c3625e38b7e064d9702db485c990"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/diet-tips",
+      "source": "CRAWL",
+      "targetPath": "/blogs/diet-tips",
+      "id": "37ce0a60d292af2f19ff1b72693423cf90ae7f29"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/from-mini-dosas-to-fruity-parathas-easy-breakfasts-for-school-kids",
+      "source": "CRAWL",
+      "targetPath": "/blogs/from-mini-dosas-to-fruity-parathas-easy-breakfasts-for-school-kids",
+      "id": "ee727472783d1a2e2e9b919c20749925fa50a88d"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/health-and-wellness",
+      "source": "CRAWL",
+      "targetPath": "/blogs/health-and-wellness",
+      "id": "bc903f19fc87763db37cc63b7c9110a6b82db000"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/history-of-chinese-noodles",
+      "source": "CRAWL",
+      "targetPath": "/blogs/history-of-chinese-noodles",
+      "id": "ea851fbea1ea3b3396d2c2c8fcfacf330c86eacb"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/how-to-create-a-show-stopping-diwali-dessert-table",
+      "source": "CRAWL",
+      "targetPath": "/blogs/how-to-create-a-show-stopping-diwali-dessert-table",
+      "id": "1b4146b43baf7d44e1229658eb74d291b57181be"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/indian-cafe-iconic-spots-to-visit",
+      "source": "CRAWL",
+      "targetPath": "/blogs/indian-cafe-iconic-spots-to-visit",
+      "id": "a60e3a6649ca8cae0f49dcf18aa0ccbb5e8e20c5"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/ingredients-hub",
+      "source": "CRAWL",
+      "targetPath": "/blogs/ingredients-hub",
+      "id": "ba1004c59e4baf8b734894360860398fbb37807e"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/kitchen-setup-amateur-chefs",
+      "source": "CRAWL",
+      "targetPath": "/blogs/kitchen-setup-amateur-chefs",
+      "id": "09002c5b5bec83d9d5db18203212e6b4d5d16150"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/one-pot-dinners-to-end-long-festival-days",
+      "source": "CRAWL",
+      "targetPath": "/blogs/one-pot-dinners-to-end-long-festival-days",
+      "id": "7bd99b791e3622d96fcfb65065180c19ba0bfce5"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/setting-up-a-diy-mithai-station-for-guests",
+      "source": "CRAWL",
+      "targetPath": "/blogs/setting-up-a-diy-mithai-station-for-guests",
+      "id": "c1c9734b988a10595cded8baf28245058e5f3713"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/sweets-the-diversity-of-india",
+      "source": "CRAWL",
+      "targetPath": "/blogs/sweets-the-diversity-of-india",
+      "id": "0fb305cba3ed1bfd5113f40f5ddc4ee8ca9bf232"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/tasty-and-travel-friendly-rice-recipes-for-your-lunch-box",
+      "source": "CRAWL",
+      "targetPath": "/blogs/tasty-and-travel-friendly-rice-recipes-for-your-lunch-box",
+      "id": "f6736ff04421dcc8e32670f1cd1d71f36c0b779e"
+    },
+    {
+      "url": "https://foodiesonly.in/blogs/vegetarian-diet-is-the-way-to-go",
+      "source": "CRAWL",
+      "targetPath": "/blogs/vegetarian-diet-is-the-way-to-go",
+      "id": "2af3874c75a8252cd9318c25a571ee241e1153fb"
+    },
+    {
+      "url": "https://foodiesonly.in/contact-us",
+      "source": "CRAWL",
+      "targetPath": "/contact-us",
+      "id": "dff5f3ce9888a17f62d398c195024e1cf8588560"
+    },
+    {
+      "url": "https://foodiesonly.in/faqs",
+      "source": "CRAWL",
+      "targetPath": "/faqs",
+      "id": "56e19c42462452bbce5d355f6b108a47ad3cd67a"
+    },
+    {
+      "url": "https://foodiesonly.in/festivals/diwali",
+      "source": "CRAWL",
+      "targetPath": "/festivals/diwali",
+      "id": "d9231ae70692350367344a26eca8362a324b078f"
+    },
+    {
+      "url": "https://foodiesonly.in/festivals/ganesh-chaturthi",
+      "source": "CRAWL",
+      "targetPath": "/festivals/ganesh-chaturthi",
+      "id": "dd77d3013055b6e2584891775e457202317e12b0"
+    },
+    {
+      "url": "https://foodiesonly.in/festivals/navratri",
+      "source": "CRAWL",
+      "targetPath": "/festivals/navratri",
+      "id": "40c12e38d23000c9c2265e2ad57cb7050ba9fced"
+    },
+    {
+      "url": "https://foodiesonly.in/festivals/onam",
+      "source": "CRAWL",
+      "targetPath": "/festivals/onam",
+      "id": "16dec07adca5645f2e11a4f0dd3959e8bdc1a4b6"
+    },
+    {
+      "url": "https://foodiesonly.in/privacy-policy",
+      "source": "CRAWL",
+      "targetPath": "/privacy-policy",
+      "id": "d0ad07292f27c819fdd4135dcd6c0608a0b29525"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes",
+      "source": "CRAWL",
+      "targetPath": "/recipes",
+      "id": "ceebc8b9d6d9b71eddb28d307f86db03e33a47fd"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/apple-cranberry-pecan-salad",
+      "source": "CRAWL",
+      "targetPath": "/recipes/apple-cranberry-pecan-salad",
+      "id": "d05cf69668c056e9de90387fc2256750f8cf779f"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/bajra-tartlets-with-fruit-custard",
+      "source": "CRAWL",
+      "targetPath": "/recipes/bajra-tartlets-with-fruit-custard",
+      "id": "a2dce074c6a5d8d4774471a8ca358fcf4f344ac6"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/baked-palak-sev-for-diwali-mix-crispy-and-healthy-festive-snack",
+      "source": "CRAWL",
+      "targetPath": "/recipes/baked-palak-sev-for-diwali-mix-crispy-and-healthy-festive-snack",
+      "id": "c451c5d5dfe4212739be8ce7b46938871e6feed5"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/bellam-pootharekulu",
+      "source": "CRAWL",
+      "targetPath": "/recipes/bellam-pootharekulu",
+      "id": "39369a277fc19e5a3a1381fdc5969f4f70d5199c"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/blueberry-lemon-yogurt-cookies",
+      "source": "CRAWL",
+      "targetPath": "/recipes/blueberry-lemon-yogurt-cookies",
+      "id": "18743ca568b39af5d072d506ba762dc609103a71"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/bread-gulab-jamun",
+      "source": "CRAWL",
+      "targetPath": "/recipes/bread-gulab-jamun",
+      "id": "cc8ca76a984e3966db4b9a01ec6254171d0122a0"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/carrot-kanji-recipe-easy-and-spicy-fermented-drink",
+      "source": "CRAWL",
+      "targetPath": "/recipes/carrot-kanji-recipe-easy-and-spicy-fermented-drink",
+      "id": "ff26f52d6cfe4c694bb0eb7f59858998a516d033"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/chicken-dakbangala",
+      "source": "CRAWL",
+      "targetPath": "/recipes/chicken-dakbangala",
+      "id": "012c2a1ad7a8b03b46e89f62032587704e428fff"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/chicken-recipes",
+      "source": "CRAWL",
+      "targetPath": "/recipes/chicken-recipes",
+      "id": "2b5ad18d9b9e0b71886cb6b699bf653defa6709d"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/chila",
+      "source": "CRAWL",
+      "targetPath": "/recipes/chila",
+      "id": "bf9ce8894ca7479348fcaa506e2257d423cd4473"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/crispy-medu-vada-recipe-a-deliciuous-breakfast-treat",
+      "source": "CRAWL",
+      "targetPath": "/recipes/crispy-medu-vada-recipe-a-deliciuous-breakfast-treat",
+      "id": "4c6a200d118b0f49f2df295cbd493e8964589437"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/crispy-sweet-banana-chips-a-festive-treat-for-onam",
+      "source": "CRAWL",
+      "targetPath": "/recipes/crispy-sweet-banana-chips-a-festive-treat-for-onam",
+      "id": "f18ade983c0d3316b42106df0837800d9ec5ecea"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/dal-onion-kachori",
+      "source": "CRAWL",
+      "targetPath": "/recipes/dal-onion-kachori",
+      "id": "f928e00affccd321550084281d22e32f5103767a"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/desserts",
+      "source": "CRAWL",
+      "targetPath": "/recipes/desserts",
+      "id": "39d18c0d66b9df536ed4f1695a98e19946ac60f4"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/easy-nivagrya-recipe",
+      "source": "CRAWL",
+      "targetPath": "/recipes/easy-nivagrya-recipe",
+      "id": "0522393b67af342ee9bec97198b85d5f4a39b87c"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/foxtail-millet-biryani",
+      "source": "CRAWL",
+      "targetPath": "/recipes/foxtail-millet-biryani",
+      "id": "08a8d50aa225cd5d957b91ff3d8feae8076f7f60"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/french-chocolate-souffle",
+      "source": "CRAWL",
+      "targetPath": "/recipes/french-chocolate-souffle",
+      "id": "76df635721baaf8689adc514dc70027790bf4139"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/french-toast",
+      "source": "CRAWL",
+      "targetPath": "/recipes/french-toast",
+      "id": "fd1abcdcc4bc248ee1edbb71021d630e3c136504"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/ghee-roast-turkey-fiery-indian-flavours-for-a-thanksgiving-feast",
+      "source": "CRAWL",
+      "targetPath": "/recipes/ghee-roast-turkey-fiery-indian-flavours-for-a-thanksgiving-feast",
+      "id": "e8c1f57a11ee05c52abd2139c4a0789730d3043e"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/global-recipes",
+      "source": "CRAWL",
+      "targetPath": "/recipes/global-recipes",
+      "id": "88a3be5fcfeb93c53dc189e0a6b4ab479edd2c6a"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/granola-recipe",
+      "source": "CRAWL",
+      "targetPath": "/recipes/granola-recipe",
+      "id": "82d840c34ca6dc85da3ef6c5275adb1876af9b08"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/handia",
+      "source": "CRAWL",
+      "targetPath": "/recipes/handia",
+      "id": "86d7c754f1ab0a3bdcecb61ee8da0def53e2f78b"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/harissa-chickpea-stew-with-eggplant-and-millet",
+      "source": "CRAWL",
+      "targetPath": "/recipes/harissa-chickpea-stew-with-eggplant-and-millet",
+      "id": "3e1978bc59a1e9b514c920f77fdd054842b71873"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/healthy-chia-seed-pudding",
+      "source": "CRAWL",
+      "targetPath": "/recipes/healthy-chia-seed-pudding",
+      "id": "0f187ac5b080d4dfcf4fa64a89ed9836eabb29fc"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/high-protein-pani-puri-with-sprouts-filling-healthy-vegan-snack",
+      "source": "CRAWL",
+      "targetPath": "/recipes/high-protein-pani-puri-with-sprouts-filling-healthy-vegan-snack",
+      "id": "d54ca0a47e057806c68c361d201cb95774efbc69"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/homemade-vegan-cheese",
+      "source": "CRAWL",
+      "targetPath": "/recipes/homemade-vegan-cheese",
+      "id": "55667dc89f4e1a1a70e8ce5c40317860bf370642"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/how-to-make-chole-masala-at-home-a-classic-north-indian-favourite",
+      "source": "CRAWL",
+      "targetPath": "/recipes/how-to-make-chole-masala-at-home-a-classic-north-indian-favourite",
+      "id": "057aa6a9cb981c70ebca8461fd0293e6c99cecc9"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/how-to-make-perfect-medu-vada-a-south-indian-breakfast-classic",
+      "source": "CRAWL",
+      "targetPath": "/recipes/how-to-make-perfect-medu-vada-a-south-indian-breakfast-classic",
+      "id": "9c234d36ad93cbaf5fcbeb3c2867666c58be6645"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/kale-and-butternut-squash-salad-with-quinoa",
+      "source": "CRAWL",
+      "targetPath": "/recipes/kale-and-butternut-squash-salad-with-quinoa",
+      "id": "ead3de8c5306fcb20f564da35608a68b39d0e297"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/kale-and-paneer-stuffed-naan",
+      "source": "CRAWL",
+      "targetPath": "/recipes/kale-and-paneer-stuffed-naan",
+      "id": "d2a2bd7cc8f1a86ef12a39e6fa179ff6728d05b1"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/kerala-olan",
+      "source": "CRAWL",
+      "targetPath": "/recipes/kerala-olan",
+      "id": "ddcab93932e519483bb82bc9e7b52a10e54df58c"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/kheer-icecream",
+      "source": "CRAWL",
+      "targetPath": "/recipes/kheer-icecream",
+      "id": "bdaf8a9d8cfac3ec33657505ceedd50bf3dfa351"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/laal-maas",
+      "source": "CRAWL",
+      "targetPath": "/recipes/laal-maas",
+      "id": "9a93428fbeceedea4597dbcca6695a58a421846f"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/makhana-creme-brulee-recipe",
+      "source": "CRAWL",
+      "targetPath": "/recipes/makhana-creme-brulee-recipe",
+      "id": "30f3bf81b9c7f08d2ff4094b7048f79eb54d7064"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/mango-curry-chickpeas",
+      "source": "CRAWL",
+      "targetPath": "/recipes/mango-curry-chickpeas",
+      "id": "747cb6b8448e02e040327ce305e7ebd9d05564ef"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/mango-tofu-stir-fry",
+      "source": "CRAWL",
+      "targetPath": "/recipes/mango-tofu-stir-fry",
+      "id": "d5cfd4c1bd6762148fc516111280475bc8c930ff"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/maple-roasted-sweet-potatoes-with-pecan",
+      "source": "CRAWL",
+      "targetPath": "/recipes/maple-roasted-sweet-potatoes-with-pecan",
+      "id": "092d4a78f655b58e252133d18dc39eeedca44609"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/millet-recipes",
+      "source": "CRAWL",
+      "targetPath": "/recipes/millet-recipes",
+      "id": "1d8f0a80e7cfdeebe4bf63118b687b2a3f3029bb"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/moringa-beetroot-hummus",
+      "source": "CRAWL",
+      "targetPath": "/recipes/moringa-beetroot-hummus",
+      "id": "75e3da9c730e7c2054c231a9cf4af3736043dc81"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/moringa-beetroot-hummus/begin",
+      "source": "CRAWL",
+      "targetPath": "/recipes/moringa-beetroot-hummus/begin",
+      "id": "6c4ec22428d07d7265e256cd5094574b6e718e4c"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/moringa-chicken-soup",
+      "source": "CRAWL",
+      "targetPath": "/recipes/moringa-chicken-soup",
+      "id": "07a65319a5e97ac0141c6a97d65eb14f77a215b1"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/moringa-guacamole",
+      "source": "CRAWL",
+      "targetPath": "/recipes/moringa-guacamole",
+      "id": "0a16065d4faa9ffeb3041ae87a40fb0dbcea1daf"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/moringa-honey-coconut-icecream",
+      "source": "CRAWL",
+      "targetPath": "/recipes/moringa-honey-coconut-icecream",
+      "id": "1e23f5f6a9279d652fcae757f9d0a43e3c2b6c44"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/no-bake-banana-caramel-pecan-pie",
+      "source": "CRAWL",
+      "targetPath": "/recipes/no-bake-banana-caramel-pecan-pie",
+      "id": "990541376eb6ed7438f7b24791d3ed9a643411af"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/podi-dosa",
+      "source": "CRAWL",
+      "targetPath": "/recipes/podi-dosa",
+      "id": "631e8659ed9f1997d3caf9711aae1ef4603cbf31"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/pumpkin-with-millet-and-black-lentil",
+      "source": "CRAWL",
+      "targetPath": "/recipes/pumpkin-with-millet-and-black-lentil",
+      "id": "263a577498e7092a5580c9c833290736eb12a3e7"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/ragi-makhana-smoothie",
+      "source": "CRAWL",
+      "targetPath": "/recipes/ragi-makhana-smoothie",
+      "id": "0fbe733c2a945d0566f46b272e1dc9f8e9433ff1"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/regional-recipes",
+      "source": "CRAWL",
+      "targetPath": "/recipes/regional-recipes",
+      "id": "343a6670380932eccc5bd4c15c05ff9387bde5df"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/snacks",
+      "source": "CRAWL",
+      "targetPath": "/recipes/snacks",
+      "id": "f47706d3265e9f3e7492d6df59772d750b4ec053"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/sorghum-idli",
+      "source": "CRAWL",
+      "targetPath": "/recipes/sorghum-idli",
+      "id": "c76cd55c995ed6f065731b5d78ab98f0489de321"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/start-your-day-right-easy-and-flavourful-kanda-poha-breakfast-recipe",
+      "source": "CRAWL",
+      "targetPath": "/recipes/start-your-day-right-easy-and-flavourful-kanda-poha-breakfast-recipe",
+      "id": "edc5c5354f8c3d099209d82298c3bfc44a0bb67a"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/sweet-potato-and-marshmallow-pie-a-creamy-thanksgiving-classic",
+      "source": "CRAWL",
+      "targetPath": "/recipes/sweet-potato-and-marshmallow-pie-a-creamy-thanksgiving-classic",
+      "id": "a4c925ceec188a977ede4a64ade12e5d0fb141b2"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/tamarind-rice",
+      "source": "CRAWL",
+      "targetPath": "/recipes/tamarind-rice",
+      "id": "183022728f14156d9ebdc0d464c24309ec517304"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/tandoori-soya-chaap",
+      "source": "CRAWL",
+      "targetPath": "/recipes/tandoori-soya-chaap",
+      "id": "123efb37117e3ddb426852703098bf7261f8b080"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/thalipeeth",
+      "source": "CRAWL",
+      "targetPath": "/recipes/thalipeeth",
+      "id": "dc90fe471d142b107236a7b26bdeb832c8a8bc1b"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/tiramisu-overnight-oats",
+      "source": "CRAWL",
+      "targetPath": "/recipes/tiramisu-overnight-oats",
+      "id": "97fc2812aaee0bb072c0bf9ce6b9ee60edca9fb2"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/vegan-biscoff-oats",
+      "source": "CRAWL",
+      "targetPath": "/recipes/vegan-biscoff-oats",
+      "id": "95fc0dbc54dfd080e302cdff1c0d4815a002315b"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/vegan-biscoff-oats/begin",
+      "source": "CRAWL",
+      "targetPath": "/recipes/vegan-biscoff-oats/begin",
+      "id": "1744e8d1597cc794b2baae3b24b2a8b8a6a27b46"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/vegan-cherry-and-almond-brownies",
+      "source": "CRAWL",
+      "targetPath": "/recipes/vegan-cherry-and-almond-brownies",
+      "id": "af505fd5ff4b309c297a76b3c5813320cd140e79"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/vegan-gajar-halwa",
+      "source": "CRAWL",
+      "targetPath": "/recipes/vegan-gajar-halwa",
+      "id": "97691301b8e0c7a57504b53f85532e79a55c3f1d"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/vegan-mango-mousse",
+      "source": "CRAWL",
+      "targetPath": "/recipes/vegan-mango-mousse",
+      "id": "ef6d016ac6258e3060e6fe49953ec21d52de2cb9"
+    },
+    {
+      "url": "https://foodiesonly.in/recipes/vellai-dosai",
+      "source": "CRAWL",
+      "targetPath": "/recipes/vellai-dosai",
+      "id": "4d991c2023526da3ae92f3d3b0c4cb3a0b16a9db"
+    },
+    {
+      "url": "https://foodiesonly.in/sitemap",
+      "source": "CRAWL",
+      "targetPath": "/sitemap",
+      "id": "5137f785d3d7a01c763f129b00aefd1d31c8b55f"
+    },
+    {
+      "url": "https://foodiesonly.in/terms-of-use",
+      "source": "CRAWL",
+      "targetPath": "/terms-of-use",
+      "id": "a7ad5b8087634e1779866cc693b6dcf5e2fe16ce"
+    }
+  ],
+  "crawlOptions": {
+    "timeout": 10000,
+    "inclusionPatterns": [],
+    "exclusionPatterns": [],
+    "limit": 100,
+    "sameDomain": true,
+    "keepHash": false,
+    "strategy": "crawl",
+    "logger": {},
+    "strategiesAttempted": [
+      "SITEMAPS",
+      "CRAWL"
+    ]
+  },
+  "extractionErrors": [
+    {
+      "url": "https://foodiesonly.in/festivals",
+      "status": "404 Not Found"
+    },
+    {
+      "url": "https://foodiesonly.in/_next/static/media/47cbc4e2adbc5db9-s.p.woff2",
+      "status": "content type is not text/html. Content type: font/woff2"
+    },
+    {
+      "url": "https://foodiesonly.in/_next/static/media/63fe087876587bbb-s.p.woff2",
+      "status": "content type is not text/html. Content type: font/woff2"
+    },
+    {
+      "url": "https://foodiesonly.in/_next/static/media/e807dee2426166ad-s.p.woff2",
+      "status": "content type is not text/html. Content type: font/woff2"
+    }
+  ],
+  "errorCountMessage": "{\"E_404\":1,\"others\":3}",
+  "error": null
+}
