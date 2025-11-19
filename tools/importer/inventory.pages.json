@@ -1,0 +1,472 @@
+{
+  "templates": [
+    {
+      "name": "'Food Blog Template'",
+      "cluster": 1,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/recipes/chicken-recipes",
+          "uuid": "2b5ad18d9b9e0b71886cb6b699bf653defa6709d"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/desserts",
+          "uuid": "39d18c0d66b9df536ed4f1695a98e19946ac60f4"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/millet-recipes",
+          "uuid": "1d8f0a80e7cfdeebe4bf63118b687b2a3f3029bb"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/regional-recipes",
+          "uuid": "343a6670380932eccc5bd4c15c05ff9387bde5df"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/snacks",
+          "uuid": "f47706d3265e9f3e7492d6df59772d750b4ec053"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/global-recipes",
+          "uuid": "88a3be5fcfeb93c53dc189e0a6b4ab479edd2c6a"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/easy-nivagrya-recipe",
+          "uuid": "0522393b67af342ee9bec97198b85d5f4a39b87c"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/avocado-coconut-icecream",
+          "uuid": "0c638775c0ee858ef9e8eb3ac81cd9080568c17a"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-curry-chickpeas",
+          "uuid": "747cb6b8448e02e040327ce305e7ebd9d05564ef"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/easy-homemade-pesto-pasta-a-burst-of-italian-flavours",
+          "uuid": "a8054a0e64bb8d3ca45fc40198311542653a8368"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/aloo-kanda-poha-recipe-a-flavourful-maharashtrian-breakfast",
+          "uuid": "48e9bde3544faefd00beb93e87da47d4903db28d"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/coconut-jaggery-pitha-recipe",
+          "uuid": "ce9907dcc9f424c8a775cceb0539774e64586aca"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-coconut-popsicles",
+          "uuid": "45d00da5d810256a863011a4c28663f694a2042a"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/andhra-special-gongura-pachadi-recipe-spicy-and-tangy-delight",
+          "uuid": "110a04de380d51b22f503da4c9b0a23b92ea37e8"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/ghee-roast-turkey-fiery-indian-flavours-for-a-thanksgiving-feast",
+          "uuid": "e8c1f57a11ee05c52abd2139c4a0789730d3043e"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/how-to-make-perfect-medu-vada-a-south-indian-breakfast-classic",
+          "uuid": "9c234d36ad93cbaf5fcbeb3c2867666c58be6645"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/sweet-potato-and-marshmallow-pie-a-creamy-thanksgiving-classic",
+          "uuid": "a4c925ceec188a977ede4a64ade12e5d0fb141b2"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/spiced-roasted-chickpea-a-crunchy-snack-for-your-diwali-jar",
+          "uuid": "557a98eba291c616fea218701ab6a89c4d2df6e8"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/navratri-bhel-with-leftover-snacks",
+          "uuid": "1da5383ab3c5477faca47d33431c54a0783508ab"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/high-protein-pani-puri-with-sprouts-filling-healthy-vegan-snack",
+          "uuid": "d54ca0a47e057806c68c361d201cb95774efbc69"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/bajra-tartlets-with-fruit-custard",
+          "uuid": "a2dce074c6a5d8d4774471a8ca358fcf4f344ac6"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-thai-curry",
+          "uuid": "91c8dfd2c7d5dec1df47f97135c1a8e15ea5fa4f"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/magaya-pachadi",
+          "uuid": "de9ae29d24b2781b4be718b2f8ff28f3fd445ad8"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/teriyaki-chicken-pasta-salad",
+          "uuid": "4b2d79a08a13882134a54611afea509da1092f93"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/chicken-popcorn-pasta",
+          "uuid": "ae9b4ac2a75dedcf51ffaeeb5dc7f93101b4d152"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/amle-jellies-recipe-tangy-sweet-treat-for-lakshmi-puja",
+          "uuid": "bbb1c5804c67bfa2f9b4c4252f2c766f2c19fd83"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/noodles",
+          "uuid": "515eb9e66d5ce54674bc672327cb367323dfd816"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-coconut-chicken-curry",
+          "uuid": "89f783c52008431d49e192c75cdc3074781cbcc9"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-chicken-salad-wraps",
+          "uuid": "c2b184605ef705e7b2477fa383e2cb7368530bb4"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-bbq-sauce",
+          "uuid": "fa88cd927cb7b7cff5c86ae08a2040e05d7e3d94"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-chunda",
+          "uuid": "1f9e27e056d8220f88c71bf6eefb4429d7d7bc5a"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/vegan-gajar-halwa",
+          "uuid": "97691301b8e0c7a57504b53f85532e79a55c3f1d"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/kalakand",
+          "uuid": "f45b81da5785c17248a515265ed1fd778c5b50b2"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/moringa-honey-coconut-icecream",
+          "uuid": "1e23f5f6a9279d652fcae757f9d0a43e3c2b6c44"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/foxtail-millet-biryani",
+          "uuid": "08a8d50aa225cd5d957b91ff3d8feae8076f7f60"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/chicken-dakbangala",
+          "uuid": "012c2a1ad7a8b03b46e89f62032587704e428fff"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/masala-cornflakes-bhel",
+          "uuid": "7db3ceea551a34d8925035bdaaf6d8f3e3df7a86"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/mango-pappu",
+          "uuid": "afee00faeb8d1ea48baf3b682bd4fa25b1c6b7c5"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/finger-millet-murukku",
+          "uuid": "626190bd1e6b63d6bdaaf821540aca70973b27a9"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/handia",
+          "uuid": "86d7c754f1ab0a3bdcecb61ee8da0def53e2f78b"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/ragi-makhana-smoothie",
+          "uuid": "0fbe733c2a945d0566f46b272e1dc9f8e9433ff1"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/apple-rosemary-moringa-cooler",
+          "uuid": "9ee7f9c0c6c8fbebc3bda4b31e50f28c04eb9d3e"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/kheer-icecream",
+          "uuid": "bdaf8a9d8cfac3ec33657505ceedd50bf3dfa351"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/apple-cranberry-pecan-salad",
+          "uuid": "d05cf69668c056e9de90387fc2256750f8cf779f"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/maple-roasted-sweet-potatoes-with-pecan",
+          "uuid": "092d4a78f655b58e252133d18dc39eeedca44609"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/laal-maas",
+          "uuid": "9a93428fbeceedea4597dbcca6695a58a421846f"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/tamarind-rice",
+          "uuid": "183022728f14156d9ebdc0d464c24309ec517304"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/dahi-tadka",
+          "uuid": "1511ea753a65dee56b0885f2a5ee1df7d974fc0a"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/bajre-ki-raabdi",
+          "uuid": "f29b063c96aa72d9325b4fdd1f21ec195c5f4e4b"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/millet-chocolate-energy-bars",
+          "uuid": "2a1c978d68d374251116b7cd7ce7b4f0ad9d2bb3"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/ghewar",
+          "uuid": "869477ea5be5745621cbd3b252656fc99ecceb97"
+        }
+      ]
+    },
+    {
+      "name": "'food blog template'",
+      "cluster": 2,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/contact-us",
+          "uuid": "dff5f3ce9888a17f62d398c195024e1cf8588560"
+        },
+        {
+          "url": "https://foodiesonly.in/faqs",
+          "uuid": "56e19c42462452bbce5d355f6b108a47ad3cd67a"
+        },
+        {
+          "url": "https://foodiesonly.in/privacy-policy",
+          "uuid": "d0ad07292f27c819fdd4135dcd6c0608a0b29525"
+        },
+        {
+          "url": "https://foodiesonly.in/about-us",
+          "uuid": "33ed8456c3354067e38240dc66877a671e25bc02"
+        },
+        {
+          "url": "https://foodiesonly.in/terms-of-use",
+          "uuid": "a7ad5b8087634e1779866cc693b6dcf5e2fe16ce"
+        },
+        {
+          "url": "https://foodiesonly.in/sitemap",
+          "uuid": "5137f785d3d7a01c763f129b00aefd1d31c8b55f"
+        }
+      ]
+    },
+    {
+      "name": "'Food Marketplace'",
+      "cluster": 3,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/festivals/ganesh-chaturthi",
+          "uuid": "dd77d3013055b6e2584891775e457202317e12b0"
+        },
+        {
+          "url": "https://foodiesonly.in/festivals/diwali",
+          "uuid": "d9231ae70692350367344a26eca8362a324b078f"
+        },
+        {
+          "url": "https://foodiesonly.in/festivals/onam",
+          "uuid": "16dec07adca5645f2e11a4f0dd3959e8bdc1a4b6"
+        },
+        {
+          "url": "https://foodiesonly.in/festivals/navratri",
+          "uuid": "40c12e38d23000c9c2265e2ad57cb7050ba9fced"
+        }
+      ]
+    },
+    {
+      "name": "'recipe blog template'",
+      "cluster": 4,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/blogs/diet-tips",
+          "uuid": "37ce0a60d292af2f19ff1b72693423cf90ae7f29"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/all-natural-fusion-sweets-your-gym-bro-will-love",
+          "uuid": "439312aff97e0d860f9b80f6ed3360e00aa2ccf0"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/every-kids-dream-thali-as-per-ai",
+          "uuid": "9b8106cd0c9abf736400b286fc60bee1036295e1"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/turn-leftover-pooris-into-sweet-and-savoury-snacks",
+          "uuid": "38cfad22b8f6ab2ec1f333e1ed9adf30d0bb1028"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/one-pot-dinners-to-end-long-festival-days",
+          "uuid": "7bd99b791e3622d96fcfb65065180c19ba0bfce5"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/quick-diwali-chaat-station-setup",
+          "uuid": "d6181729bad830646292dc45219c61b9be5a9763"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/childrens-day-how-to-make-food-look-like-fun-and-still-be-nutritious",
+          "uuid": "5cb03a2714b7005c9206f7e7bbb4b5667f21a2e5"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/childrens-day-making-junk-food-healthier-without-your-kids-noticing-the-difference",
+          "uuid": "f772be811c98ac762132c44d1b8ad4c69fa7949c"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/exploring-japanese-cuisine-flavours",
+          "uuid": "34fcbe10d1b78f7433d3b88ff4abda6cc2efe5ef"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/ganesh-chaturthi-sweet-to-savoury-kurmura-how-to-use-ganpatis-favourite-puffed-rice",
+          "uuid": "8dada5af97a378cda39d955dea53ab76f6565e1a"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/chia-pudding-breakfast-that-taste-like-desert",
+          "uuid": "1b013a961bda77a67df2d57ff8022a25df3512aa"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/sweets-the-diversity-of-india",
+          "uuid": "0fb305cba3ed1bfd5113f40f5ddc4ee8ca9bf232"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/bebinca-goan-dessert-layers-of-luxury",
+          "uuid": "e53e3fadf74f94bfb82145b793d3c66523a8204d"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/cooking-goat-liver-to-perfection",
+          "uuid": "7ad86401eeb41e36c01ff962c812aa30cc40f9e8"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/pasta-alternatives-discovering-delicious-alternatives",
+          "uuid": "3f9395119ded6d55f21c7b35cc1fb87589133f34"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/kitchen-setup-amateur-chefs",
+          "uuid": "09002c5b5bec83d9d5db18203212e6b4d5d16150"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/history-of-chinese-noodles",
+          "uuid": "ea851fbea1ea3b3396d2c2c8fcfacf330c86eacb"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/instant-noodles-popular-in-india",
+          "uuid": "10f8a58b9efeb9583d11a01653a7f637b59d44e5"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/coffee-based-dessert-discovering-coffee-magic-in-desserts",
+          "uuid": "5f3c24754d9ae9bd32e43921c334f1a280f6cac3"
+        }
+      ]
+    },
+    {
+      "name": "'Recipe Listing'",
+      "cluster": 5,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/blogs/korean-drama-and-korean-meals-a-lip-smacking-adventure",
+          "uuid": "b986d457bb0efcaad326911c9addf13659d165c5"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/chaat-street-food-guilt-free-with-a-millet-makeover",
+          "uuid": "66bf081e56a59a81afcdf50165b0498089022cbf"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/indian-cafe-iconic-spots-to-visit",
+          "uuid": "a60e3a6649ca8cae0f49dcf18aa0ccbb5e8e20c5"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/cooking-tips-and-tricks",
+          "uuid": "48c9f60691ae89cc4222351558501c390311005f"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/health-and-wellness",
+          "uuid": "bc903f19fc87763db37cc63b7c9110a6b82db000"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/cuisines",
+          "uuid": "c666b4c3fae6c3625e38b7e064d9702db485c990"
+        },
+        {
+          "url": "https://foodiesonly.in/blogs/ingredients-hub",
+          "uuid": "ba1004c59e4baf8b734894360860398fbb37807e"
+        }
+      ]
+    },
+    {
+      "name": "Recipe Listing",
+      "cluster": 6,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/blogs",
+          "uuid": "5e9f8a03ac9e47e68d7b6321e4094db25bf714d3"
+        }
+      ]
+    },
+    {
+      "name": "'Product Listing Page'",
+      "cluster": 7,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/recipes/gochujang-paste/begin",
+          "uuid": "4b6ce788d2a327be0a1dbf529c910bf9291ab7b2"
+        }
+      ]
+    },
+    {
+      "name": "Recipe Page",
+      "cluster": 8,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/recipes/ramen-bowl/begin",
+          "uuid": "8bd10f6c803af492cf792e7ff346d6a771c520d2"
+        }
+      ]
+    },
+    {
+      "name": "'Recipe listing page'",
+      "cluster": 9,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/recipes",
+          "uuid": "ceebc8b9d6d9b71eddb28d307f86db03e33a47fd"
+        }
+      ]
+    },
+    {
+      "name": "'Product Listing Page'",
+      "cluster": 10,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/recipes/moringa-honey-coconut-icecream/begin",
+          "uuid": "5070ccf13c9d8c4175ef65938621f123080a0c76"
+        }
+      ]
+    },
+    {
+      "name": "'Recipe Listing'",
+      "cluster": 11,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/recipes/gochujang-paste",
+          "uuid": "0e4cb8acab0fb801395f5d2a746bc51a87391bab"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/no-bake-banana-caramel-pecan-pie",
+          "uuid": "990541376eb6ed7438f7b24791d3ed9a643411af"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/ramen-bowl",
+          "uuid": "e7eb7251804459782064fc3a19351727addad03a"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/vegan-mango-mousse",
+          "uuid": "ef6d016ac6258e3060e6fe49953ec21d52de2cb9"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/black-garlic-chilli-oil-noodles",
+          "uuid": "0a4e156ee79c0892eea3b0ab5731cdd476ebefde"
+        },
+        {
+          "url": "https://foodiesonly.in/recipes/parmesan-risotto",
+          "uuid": "ca3d810d54d08c65cfe9866cf53a7e4292f4e765"
+        }
+      ]
+    },
+    {
+      "name": "'Food Blog Homepage'",
+      "cluster": 12,
+      "pages": [
+        {
+          "url": "https://foodiesonly.in/",
+          "uuid": "1aae906803fa7da20c8c26a6045d02b7002a0fca"
+        }
+      ]
+    }
+  ]
+}
