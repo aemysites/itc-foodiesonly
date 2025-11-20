@@ -909,7 +909,6 @@
 }
 
 .hero > div:first-child {
-  /* Left element - orange text block */
   display: flex;
   align-items: center;
 }
@@ -922,7 +921,7 @@
   font-size: 28px;
   border-radius: 16px;
   padding: 12px 28px;
-  min-width: 120px; /* adjust as needed */
+  min-width: 120px;
   min-height: 48px;
   display: flex;
   align-items: center;
@@ -930,7 +929,6 @@
 }
 
 .hero > div:last-child {
-  /* Right element - green speech bubble */
   display: flex;
   align-items: center;
   position: relative;
@@ -949,7 +947,6 @@
   align-items: center;
 }
 
-/* Speech bubble tail using a pseudo-element */
 .hero > div:last-child > div::after {
   content: '';
   position: absolute;
@@ -961,4 +958,80 @@
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
   border-top: 16px solid #00b388;
+}
+
+
+.hero.hero42.block {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-image: url('./media_198eb37f564cd9d83dfb7c7131909b052e6ecb2ea.png?width=2000&format=png&optimize=medium');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero.hero42.block > div:first-child picture {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.hero.hero42.block::before { /* orange banner */
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 120px;
+  background: linear-gradient(105deg, orange 97%, transparent 100%);
+  z-index: 2;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  border-bottom: 4px solid #222;
+}
+
+.hero.hero42.block::after { /* decorative border */
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 38px;
+  background: url('data:image/svg+xml;utf8,<svg ... border svg ...>') repeat-x left bottom;
+  z-index: 5;
+}
+
+.hero.hero42.block > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 4;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.hero.hero42.block h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-shadow: 0 2px 8px #222, 0 0 2px #000;
+  margin-bottom: 2rem;
+}
+
+.hero.hero42.block p picture img {
+  border-radius: 50%;
+  background: #ffc200;
+  box-shadow: 0 2px 12px 0 #222;
+  padding: 18px;
+  display: block;
+  margin: 0 auto;
+  width: 88px;
+  height: 88px;
+}
+
+@media (width <= 800px) {
+  .hero.hero42.block {
+    flex-direction: column;
+  }
 }
