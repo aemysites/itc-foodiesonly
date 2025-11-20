@@ -1471,7 +1471,6 @@
   align-items: center;
 }
 
-/* Label area */
 .cards.cards29 .cards-card-body p:first-child strong {
   display: inline-block;
   background: #f5f9f7;
@@ -1487,7 +1486,6 @@
   text-align: center;
 }
 
-/* Card image - large, centered, no background */
 .cards.cards29 .cards-card-image {
   width: 100%;
   margin: 0 0 18px;
@@ -1543,3 +1541,219 @@
     max-width: 100%;
   }
 }
+
+
+.cards.cards30 ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  align-items: stretch;
+}
+
+.cards.cards30 ul li {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 7%);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+  min-height: 400px;
+  margin: 0;
+  padding: 0;
+  align-items: stretch;
+}
+
+.cards.cards30 ul li:hover {
+  box-shadow: 0 6px 24px rgb(0 0 0 / 13%);
+}
+
+.cards.cards30 .cards-card-image {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cards.cards30 .cards-card-image img,
+.cards.cards30 .cards-card-image picture,
+.cards.cards30 .cards-card-image .placeholder-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: #eaeaea;
+}
+
+.cards.cards30 .cards-card-image .placeholder-image {
+  min-height: 220px;
+}
+
+.cards.cards30 .cards-card-image .tag,
+.cards.cards30 .cards-card-body p:first-child {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  background: #242424;
+  color: #fff;
+  padding: 7px 18px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  z-index: 2;
+  margin: 0;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  max-width: 85%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* If tag is not in image, but in body right below image, visually lift it over the image */
+.cards.cards30 .cards-card-body p:first-child:not(.tag) {
+  position: absolute;
+  top: 190px;
+  left: 20px;
+  bottom: auto;
+}
+
+/* Card body (below image), strictly stacked */
+.cards.cards30 .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 20px 18px;
+  flex: 1 1 auto;
+  margin: 0;
+  position: relative;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.cards.cards30 .cards-card-body h3 {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin: 14px 0 8px;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.cards.cards30 .cards-card-body a {
+  color: #7c7c7c;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-bottom: 8px;
+}
+
+.cards.cards30 .cards-card-body p.button-container a.button {
+  background: #242424;
+  color: #fff;
+  border-radius: 20px;
+  padding: 7px 18px;
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: 12px;
+  margin-bottom: 0;
+  border: none;
+}
+
+.cards.cards30 .cards-card-body p.button-container a.button:hover,
+.cards.cards30 .cards-card-body p.button-container a.button:focus {
+  background: var(--link-hover-color);
+}
+
+.cards.cards30 .cards-card-body .info-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0 9px;
+}
+
+.cards.cards30 .cards-card-body .info-row p {
+  margin: 0;
+  font-size: 0.97rem;
+}
+
+.cards.cards30 .cards-card-body .info-row .likes {
+  display: flex;
+  align-items: center;
+  color: var(--dark-color);
+}
+
+.cards.cards30 .cards-card-body .info-row .likes picture,
+.cards.cards30 .cards-card-body .info-row .likes .icon {
+  margin-right: 7px;
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+}
+
+.cards.cards30 .cards-card-body .info-row .date {
+  color: #7c7c7c;
+  font-size: 0.94rem;
+  text-align: right;
+}
+
+@media (width <= 900px) {
+  .cards.cards30 ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .cards.cards30 .cards-card-image img,
+  .cards.cards30 .cards-card-image picture,
+  .cards.cards30 .cards-card-image .placeholder-image {
+    height: 160px;
+    min-height: 160px;
+  }
+
+  .cards.cards30 ul li {
+    min-height: 320px;
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cards30 ul {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    max-width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .cards.cards30 .cards-card-image img,
+  .cards.cards30 .cards-card-image picture,
+  .cards.cards30 .cards-card-image .placeholder-image {
+    height: 110px;
+    min-height: 110px;
+  }
+
+  .cards.cards30 ul li {
+    min-height: 220px;
+  }
+
+  .cards.cards30 .cards-card-body {
+    padding: 13px 10px 12px;
+  }
+}
+
+/* Remove all gap between image and card body */
+
+/* Ensure card is always stretching vertically in grid */
