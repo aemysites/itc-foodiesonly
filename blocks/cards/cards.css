@@ -275,7 +275,6 @@
   opacity: 0.94;
 }
 
-/* Card title links styling */
 .cards.cards2 a:any-link {
   color: #222;
   font-weight: 700;
@@ -289,7 +288,6 @@
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
 @media (width <= 1000px) {
   .cards.cards2 ul {
     gap: 0.7rem;
@@ -320,5 +318,90 @@
   .cards.cards2 {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+
+.cards.cardsnoimages4 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards.cardsnoimages4 ul li {
+  flex: 1 1 0;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: none;
+  min-width: 0;
+  min-height: 162px;
+  padding: 32px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, background 0.2s;
+  border: none;
+  position: relative;
+}
+
+.cards.cardsnoimages4 ul li:first-child {
+  background: #cff8f6;
+  box-shadow: 0 6px 24px rgb(0 0 0 / 7%);
+  z-index: 1;
+}
+
+.cards.cardsnoimages4 .cards-card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cards.cardsnoimages4 .cards-card-body p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  word-break: break-word;
+}
+
+/* Responsive: 2 columns on medium screens, 1 column on small screens */
+@media (width <= 900px) {
+  .cards.cardsnoimages4 ul {
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+
+  .cards.cardsnoimages4 ul li {
+    min-width: calc(50% - 10px);
+    flex-basis: calc(50% - 10px);
+    padding: 24px 12px 18px;
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cardsnoimages4 ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .cards.cardsnoimages4 ul li {
+    min-width: 0;
+    width: 100%;
+    padding: 20px 6px 12px;
   }
 }
