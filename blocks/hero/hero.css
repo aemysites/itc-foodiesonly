@@ -220,7 +220,6 @@
   background: linear-gradient(0deg, rgb(30 30 30 / 45%) 0%, rgb(30 30 30 / 25%) 100%), url("https://images.unsplash.com/photo-1519864600265-abb224a43d3c?auto=format&fit=crop&w=1600&q=80") center center / cover no-repeat;
 }
 
-/* Responsive stacking for smaller screens */
 @media (width <= 900px) {
   .hero.hero10 {
     flex-direction: column;
@@ -229,7 +228,6 @@
   }
 }
 
-/* Two main columns inside hero: breadcrumbs and overlay */
 .hero.hero10 div {
   flex: 1 1 0;
   min-width: 0;
@@ -240,7 +238,6 @@
   box-sizing: border-box;
 }
 
-/* Breadcrumb bar alignment and style (first column) */
 .hero.hero10 div:first-child {
   align-items: flex-start;
   justify-content: flex-start;
@@ -250,7 +247,6 @@
   min-height: 0;
 }
 
-/* Breadcrumb pill appearance */
 .hero.hero10 div:first-child div {
   background: rgb(0 0 0 / 38%);
   color: #fff;
@@ -266,7 +262,6 @@
   margin-top: 0;
 }
 
-/* Main hero overlay alignment and card style (second column) */
 .hero.hero10 div:last-child {
   justify-content: center;
   align-items: center;
@@ -275,7 +270,6 @@
   display: flex;
 }
 
-/* Overlay/card: centered, vertical stack */
 .hero.hero10 div:last-child div {
   background: rgb(0 0 0 / 34%);
   border-radius: 2.2em;
@@ -292,7 +286,6 @@
   margin: 0 auto;
 }
 
-/* Responsive: reduce overlay padding on small screens */
 @media (width <= 700px) {
   .hero.hero10 div:last-child div {
     padding: 2em 1em 1.7em;
@@ -307,7 +300,6 @@
   }
 }
 
-/* Title styling inside overlay/card (big, bold, centered, with shadow) */
 .hero.hero10 div:last-child div h1,
 .hero.hero10 div:last-child div p {
   color: #fff;
@@ -319,7 +311,6 @@
   text-shadow: 0 2px 14px rgb(0 0 0 / 48%);
 }
 
-/* Pills: meta row (horizontal stack) */
 .hero.hero10 div:last-child div ul,
 .hero.hero10 div:last-child div ol {
   display: flex;
@@ -345,7 +336,6 @@
   margin: 0;
 }
 
-/* Tag pills: second ul/ol in overlay */
 .hero.hero10 div:last-child div ul + ul,
 .hero.hero10 div:last-child div ol + ol {
   margin-top: 0.5em;
@@ -365,7 +355,6 @@
   margin: 0;
 }
 
-/* Circular button at bottom of overlay/card */
 .hero.hero10 div:last-child div button,
 .hero.hero10 div:last-child div a.button,
 .hero.hero10 div:last-child div div {
@@ -385,10 +374,99 @@
   padding: 0;
 }
 
-/* Ensure images fill and cover if present as elements, not background */
 .hero.hero10 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+
+.hero.hero12.block {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 400px; /* adjust as needed */
+  width: 100%;
+  position: relative;
+}
+
+@media (width <= 900px) {
+  .hero.hero12.block {
+    flex-direction: column;
+  }
+}
+
+/* Left/top-level child: image section */
+.hero.hero12.block > div:first-child {
+  flex: 1 1 55%;
+  position: relative;
+  overflow: hidden;
+  min-width: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero.hero12.block > div:first-child picture,
+.hero.hero12.block > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+/* Optional: dark overlay for clarity */
+.hero.hero12.block > div:first-child::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 35%);
+  z-index: 1;
+}
+
+/* Right/top-level child: content section */
+.hero.hero12.block > div:last-child {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 40px 20px; /* adjust as needed */
+}
+
+/* Responsive font sizes/content section */
+@media (width <= 900px) {
+  .hero.hero12.block > div:last-child h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Title styling */
+.hero.hero12.block > div:last-child h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-shadow: 0 2px 8px rgb(0 0 0 / 18%);
+}
+
+/* Icon under title */
+.hero.hero12.block > div:last-child p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.hero.hero12.block > div:last-child picture img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #27C39F;
+  padding: 6px;
+  box-sizing: content-box;
 }
