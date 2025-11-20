@@ -1,6 +1,19 @@
+/* stylelint-disable no-descending-specificity */
+
 .table.block {
   width: 100%;
   overflow-x: auto;
+}
+
+header nav {
+  display: flex;
+  max-width: 1264px;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  background: #fff;
+  box-sizing: border-box;
+  height: 88px;
 }
 
 .table.block table {
@@ -50,18 +63,303 @@
   margin-top: 0.25em;
 }
 
-/* no header variant */
-.table.block.no-header table tbody tr {
-  border-top: 1px solid;
-}
-
-/* striped variant */
 .table.block.striped tbody tr:nth-child(odd) {
   background-color: var(--overlay-background-color);
 }
 
-/* bordered variant */
 .table.block.bordered table th,
 .table.block.bordered table td {
   border: 1px solid;
+}
+
+.header-wrapper .nav-wrapper {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 4%);
+}
+
+header { 
+  display: flex;
+  width: 100vw;
+  background: #fff;
+  min-height: 88px;
+  box-sizing: border-box;
+}
+
+header nav .nav-hamburger { 
+  display: none; 
+  visibility: hidden; 
+}
+
+/* Brand/Logo Section */
+header nav .nav-brand {
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  height: 88px;
+  padding-left: 32px;
+}
+
+header nav .nav-brand .default-content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-brand img, header nav .nav-brand picture img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Navigation Sections */
+header nav .nav-sections {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  height: 88px;
+  justify-content: flex-start;
+}
+
+header nav .nav-sections .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+
+header nav .nav-sections ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header nav .nav-sections ul > li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+header nav .nav-sections ul > li picture img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+header nav .nav-sections ul > li > a {
+  color: #D8751A;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 12px;
+  border-radius: 22px;
+  line-height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background 0.2s,color 0.2s;
+}
+
+header nav .nav-sections ul > li > a:hover,
+header nav .nav-sections ul > li > a:focus {
+  background: #FFE9CC;
+  color: #A3540B;
+  text-decoration: underline;
+}
+
+header nav .nav-sections ul > li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background: #fff;
+  box-shadow: 0 4px 24px rgb(216 117 26 / 15%);
+  border-radius: 6px;
+  z-index: 10;
+  margin-top: 6px;
+  padding: 10px 0;
+}
+
+header nav .nav-sections ul > li:hover > ul,
+header nav .nav-sections ul > li:focus-within > ul {
+  display: block;
+}
+
+header nav .nav-sections ul > li ul li a {
+  display: block;
+  color: #D8751A;
+  font-size: 16px;
+  padding: 10px 28px;
+  white-space: nowrap;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.2s,color 0.2s;
+}
+
+header nav .nav-sections ul > li ul li a:hover,
+header nav .nav-sections ul > li ul li a:focus {
+  background: #FFE9CC;
+  color: #A3540B;
+  text-decoration: underline;
+}
+
+/* Tool Section */
+header nav .nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding-right: 32px;
+  min-width: 220px;
+  height: 88px;
+  justify-content: flex-end;
+}
+
+header nav .nav-tools .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+header nav .nav-tools p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 14px;
+  cursor: pointer;
+  border-radius: 22px;
+  min-width: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+  line-height: 44px;
+  background: none;
+  color: #D8751A;
+  transition: background 0.2s, color 0.2s;
+}
+
+header nav .nav-tools p:hover,
+header nav .nav-tools p:focus {
+  background: #FFE9CC;
+  color: #A3540B;
+}
+
+header nav .nav-tools picture img {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+/* Button/CTA styling (optional if present) */
+header nav .nav-tools .button, 
+header nav .nav-tools a.button {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 18px;
+  padding: 0 24px;
+  border-radius: 22px;
+  background: #D8751A;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  transition: background 0.2s;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+header nav .nav-tools .button.secondary,
+header nav .nav-tools a.button.secondary {
+  background: #fff;
+  color: #D8751A;
+  border: 2px solid #D8751A;
+}
+
+header nav .nav-tools .button:hover,
+header nav .nav-tools a.button:hover,
+header nav .nav-tools .button:focus,
+header nav .nav-tools a.button:focus {
+  background: #A3540B;
+  color: #fff;
+}
+
+/* Touch targets (mobile & desktop) */
+header nav a, 
+header nav button, 
+header nav .button, 
+header nav .nav-tools p {
+  min-width: 44px;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (width <= 899px) {
+  .header-wrapper .nav-wrapper { min-width: unset; }
+
+header nav {
+header nav .nav-brand {
+  min-width: 120px;
+  padding-left: 10px;
+}
+    height: 44px;
+    width: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background 0.2s;
+  }
+
+  header nav .nav-hamburger button:active,
+  header nav .nav-hamburger button:focus {
+    background: #FFE9CC;
+  }
+
+  header nav .nav-hamburger-icon {
+    width: 28px;
+    height: 4px;
+    background: #D8751A;
+    border-radius: 2px;
+    position: relative;
+    display: block;
+  }
+
+  header nav .nav-hamburger-icon::before,
+  header nav .nav-hamburger-icon::after {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #D8751A;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+  }
+  header nav .nav-hamburger-icon::before { top: -10px; }
+  header nav .nav-hamburger-icon::after { top: 10px; }
+}
+
+.header-wrapper { 
+  width: 100vw; 
+  background: #fff; 
+  box-sizing: border-box; 
 }
