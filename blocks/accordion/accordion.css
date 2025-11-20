@@ -2,7 +2,6 @@
   border: 1px solid #dadada;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .accordion details + details {
   margin-top: 24px;
 }
@@ -58,4 +57,221 @@
 .accordion details[open] .accordion-item-body {
   border-top: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+
+.accordion.accordion40 {
+  /* Card-like FAQ block, visually centered with max-width and generous padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 600px;
+  margin: 56px auto;
+  background: var(--background-color);
+  border-radius: 44px;
+  box-shadow: 0 14px 40px rgb(23 184 146 / 17%), 0 3px 12px rgb(0 0 0 / 13%);
+  padding: 60px 38px 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (width <= 800px) {
+  .accordion.accordion40 {
+    max-width: 98vw;
+    padding: 28px 8px 18px;
+    border-radius: 22px;
+    margin: 18px auto;
+  }
+}
+
+/* Decorative elements: visually hug card, higher opacity, no text injected */
+.accordion.accordion40::before {
+  position: absolute;
+  left: -28px;
+  top: -28px;
+  width: 72px;
+  height: 72px;
+  background: radial-gradient(circle at 60% 40%, #FBAF3B 85%, transparent 100%);
+  border-radius: 50%;
+  opacity: 0.93;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.accordion.accordion40::after {
+  position: absolute;
+  right: -22px;
+  top: -22px;
+  width: 56px;
+  height: 56px;
+  background: radial-gradient(ellipse at 55% 45%, #ffe971 85%, transparent 100%);
+  border-radius: 50%;
+  opacity: 0.89;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* FAQ items: vertical stacking, generous horizontal padding, clean dividers */
+.accordion.accordion40 details {
+  border: none;
+  border-bottom: 1px solid #e4e6ea;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.accordion.accordion40 details:last-child {
+  border-bottom: none;
+}
+
+.accordion.accordion40 details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  width: 100%;
+  padding: 24px 36px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  line-height: 1.7;
+  border-radius: 0;
+  transition: background 0.18s;
+}
+
+.accordion.accordion40 details[open] summary {
+  background: #f3fbf4;
+  border-radius: 18px 18px 0 0;
+}
+
+.accordion.accordion40 details[open] {
+  background: #f8f8f8;
+  border-radius: 0 0 18px 18px;
+}
+
+.accordion.accordion40 details div,
+.accordion.accordion40 details p {
+  margin: 0;
+  padding: 0 36px 18px;
+  font-size: 1.09rem;
+  color: var(--dark-color);
+  line-height: 1.7;
+}
+
+/* Remove default marker */
+.accordion.accordion40 details summary::-webkit-details-marker,
+.accordion.accordion40 details summary::marker {
+  display: none;
+}
+
+/* Custom arrow icon styling (assumes .arrow span in summary, no content injection) */
+.accordion.accordion40 details summary .arrow {
+  margin-left: 20px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion.accordion40 details summary .arrow::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-right: 3px solid #17b892;
+  border-bottom: 3px solid #17b892;
+  transform: rotate(45deg);
+  transition: transform 0.22s;
+}
+
+.accordion.accordion40 details[open] summary .arrow::after {
+  transform: rotate(-135deg);
+}
+
+/* Responsive FAQ summary and body text */
+@media (width <= 600px) {
+  .accordion.accordion40 details summary {
+    font-size: 1.09rem;
+    min-height: 46px;
+    padding: 14px 10px;
+  }
+
+  .accordion.accordion40 details div,
+  .accordion.accordion40 details p {
+    padding: 0 10px 12px;
+    font-size: 1rem;
+  }
+}
+
+/* Multi-column FAQ layout: Use grid for .testcolumns, stack on small screens */
+.accordion.accordion40 .testcolumns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px;
+  margin: 38px 0;
+  width: 100%;
+}
+
+@media (width <= 800px) {
+  .accordion.accordion40 .testcolumns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+}
+
+/* If .testcolumns divs should be laid out side by side on desktop */
+.accordion.accordion40 .testcolumns div {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+/* On mobile, stack them vertically */
+@media (width <= 800px) {
+  .accordion.accordion40 .testcolumns div {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* FAQ buttons: visually match block style, more specific selector */
+.accordion.accordion40 .button,
+.accordion.accordion40 button {
+  border-radius: 28px;
+  font-weight: 600;
+  font-size: 1.06rem;
+  min-width: 120px;
+  min-height: 44px;
+  margin: 14px 0 0;
+  box-shadow: 0 2px 6px rgb(23 184 146 / 12%);
+  padding-left: 1.4em;
+  padding-right: 1.4em;
+}
+
+/* Secondary button style */
+.accordion.accordion40 .button.secondary,
+.accordion.accordion40 button.secondary {
+  background: #fff;
+  color: #17b892;
+  border: 2px solid #17b892;
+}
+
+/* Button hover (only inside block) */
+.accordion.accordion40 .button:hover,
+.accordion.accordion40 button:hover {
+  background-color: #17b892;
+  color: #fff;
+  border-color: #17b892;
 }
