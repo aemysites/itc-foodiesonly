@@ -29,12 +29,10 @@
 
 
 .cards.cards1 {
-  /* Ensure no unwanted background or padding */
   background: transparent;
   padding: 0;
 }
 
-/* Use CSS Grid for layout of cards, generous gap, responsive behavior */
 .cards.cards1 .cards,
 .cards.cards1 ul {
   display: grid;
@@ -46,7 +44,6 @@
   align-items: stretch;
 }
 
-/* Card container: visual pop, proper rounding, subtle shadow */
 .cards.cards1 li {
   background: #fff;
   border: 1.5px solid #c9ebdd;
@@ -58,10 +55,9 @@
   min-width: 0;
   height: 100%;
   transition: box-shadow 0.18s;
-  padding-bottom: 0; /* Remove default extra padding if present */
+  padding-bottom: 0;
 }
 
-/* Top image: full width, proper aspect ratio, rounded top */
 .cards.cards1 .cards-card-image img,
 .cards.cards1 .cards-card-image picture img {
   width: 100%;
@@ -75,14 +71,12 @@
   margin: 0;
 }
 
-/* Action row container: Remove vertical padding, ensure tight structure */
 .cards.cards1 .cards-card-image:not(:first-child) {
   margin-top: 0;
   padding: 0 18px 10px;
   padding-bottom: 6px;
 }
 
-/* Action row: Flex row layout, baseline alignment, tight spacing */
 .cards.cards1 .cards-card-image:not(:first-child) p {
   display: flex;
   flex-flow: row nowrap;
@@ -94,7 +88,6 @@
   min-height: 32px;
 }
 
-/* Action item: icon+label or icon+count as a flex row */
 .cards.cards1 .cards-card-image:not(:first-child) span,
 .cards.cards1 .cards-card-image:not(:first-child) b,
 .cards.cards1 .cards-card-image:not(:first-child) em {
@@ -113,7 +106,6 @@
   max-width: 100%;
 }
 
-/* Action row icons: outlined look, crisp, compact */
 .cards.cards1 .cards-card-image:not(:first-child) img,
 .cards.cards1 .cards-card-image:not(:first-child) picture img {
   width: 18px;
@@ -127,11 +119,6 @@
   box-shadow: none;
 }
 
-/* Make sure labels never overlap icons */
-
-/* Reduce vertical space below action row for a tighter card */
-
-/* Responsive stacking for small screens: single column, reduced gap */
 @media (width <= 800px) {
   .cards.cards1 .cards,
   .cards.cards1 ul {
@@ -146,10 +133,192 @@
   }
 }
 
-/* Remove unwanted background and box-shadow from any inner card-image rows */
 .cards.cards1 .cards-card-image,
 .cards.cards1 .cards-card-image:not(:first-child),
 .cards.cards1 .cards-card-image p {
   background: transparent;
   box-shadow: none;
+}
+
+
+.cards.cards2 {
+  background: linear-gradient(180deg, #ece4ce 0%, #fff 100%);
+  margin: 0 auto;
+  padding: 32px 0 36px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards.cards2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.1rem;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  max-width: 960px;
+  list-style: none;
+}
+
+.cards.cards2 li {
+  background: #fff;
+  border: 1.5px solid #1ec3b1;
+  border-radius: 32px;
+  box-shadow: 0 6px 24px rgb(44 55 66 / 7%);
+  width: 275px;
+  min-width: 210px;
+  max-width: 312px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  transition: box-shadow 0.18s;
+}
+
+.cards.cards2 li:hover {
+  box-shadow: 0 12px 32px rgb(44 55 66 / 19%);
+}
+
+.cards.cards2 .cards-card-image {
+  position: relative;
+  width: 100%;
+  min-height: 150px;
+  background: #f8f8f8;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  overflow: hidden;
+}
+
+.cards.cards2 .cards-card-image img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  display: block;
+}
+
+.cards.cards2 .icon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: #f6f6f6;
+  border: 1px solid #dadada;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 9px rgb(44 55 66 / 9%);
+  z-index: 2;
+  padding: 0;
+}
+
+.cards.cards2 .icon img {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.cards.cards2 .cards-card-body {
+  padding: 16px 16px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.24rem;
+  flex: 1 1 auto;
+}
+
+.cards.cards2 .cards-card-body p {
+  margin: 0;
+  color: #5e6d6c;
+  font-size: 0.97rem;
+  font-weight: 400;
+}
+
+.cards.cards2 .cards-card-body p:first-child {
+  background: #e6e7e8;
+  color: #3a4544;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 2px 10px;
+  display: inline-block;
+  margin-bottom: 5px;
+  letter-spacing: 0.01em;
+}
+
+.cards.cards2 .cards-card-body h3 {
+  color: #222;
+  font-weight: 700;
+  font-size: 1.13rem;
+  line-height: 1.3;
+  margin: 2px 0 10px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.cards.cards2 .cards-card-body p:last-child {
+  color: #b1b3b2;
+  font-size: 0.89rem;
+  margin-top: auto;
+  opacity: 0.94;
+}
+
+/* Card title links styling */
+.cards.cards2 a:any-link {
+  color: #222;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.cards.cards2 a:hover,
+.cards.cards2 a:focus {
+  color: #1ec3b1;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (width <= 1000px) {
+  .cards.cards2 ul {
+    gap: 0.7rem;
+    max-width: 620px;
+  }
+
+  .cards.cards2 li {
+    width: 40vw;
+    min-width: 170px;
+    max-width: 300px;
+  }
+}
+
+@media (width <= 700px) {
+  .cards.cards2 ul {
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    gap: 1.1rem;
+  }
+
+  .cards.cards2 li {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .cards.cards2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
