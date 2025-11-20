@@ -146,7 +146,6 @@
   padding: 3rem 1rem;
 }
 
-/* Desktop: side by side */
 @media (width >= 768px) {
   .hero.hero7.block {
     flex-direction: row;
@@ -161,7 +160,6 @@
   }
 }
 
-/* Mobile: stacked */
 @media (width <= 767px) {
   .hero.hero7.block > div {
     width: 100%;
@@ -209,4 +207,188 @@
   margin: 0;
   line-height: 1.5;
   text-shadow: 1px 1px 0 rgb(50 20 0 / 10%);
+}
+
+.hero.hero10 {
+  position: relative;
+  width: 100vw;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  background: linear-gradient(0deg, rgb(30 30 30 / 45%) 0%, rgb(30 30 30 / 25%) 100%), url("https://images.unsplash.com/photo-1519864600265-abb224a43d3c?auto=format&fit=crop&w=1600&q=80") center center / cover no-repeat;
+}
+
+/* Responsive stacking for smaller screens */
+@media (width <= 900px) {
+  .hero.hero10 {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 60vh;
+  }
+}
+
+/* Two main columns inside hero: breadcrumbs and overlay */
+.hero.hero10 div {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* Breadcrumb bar alignment and style (first column) */
+.hero.hero10 div:first-child {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 3em;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  min-height: 0;
+}
+
+/* Breadcrumb pill appearance */
+.hero.hero10 div:first-child div {
+  background: rgb(0 0 0 / 38%);
+  color: #fff;
+  border-radius: 2em;
+  padding: 0.7em 1.6em;
+  min-width: 140px;
+  max-width: 100%;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 10%);
+  letter-spacing: 0.015em;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* Main hero overlay alignment and card style (second column) */
+.hero.hero10 div:last-child {
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 0;
+  display: flex;
+}
+
+/* Overlay/card: centered, vertical stack */
+.hero.hero10 div:last-child div {
+  background: rgb(0 0 0 / 34%);
+  border-radius: 2.2em;
+  padding: 3em 2em 2.5em;
+  box-shadow: 0 6px 32px rgb(0 0 0 / 19%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3em;
+  width: 100%;
+  max-width: 440px;
+  min-width: 0;
+  margin: 0 auto;
+}
+
+/* Responsive: reduce overlay padding on small screens */
+@media (width <= 700px) {
+  .hero.hero10 div:last-child div {
+    padding: 2em 1em 1.7em;
+    max-width: 98vw;
+  }
+
+  .hero.hero10 div,
+  .hero.hero10 div:first-child {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 1.2em;
+  }
+}
+
+/* Title styling inside overlay/card (big, bold, centered, with shadow) */
+.hero.hero10 div:last-child div h1,
+.hero.hero10 div:last-child div p {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 0.4em;
+  text-align: center;
+  text-shadow: 0 2px 14px rgb(0 0 0 / 48%);
+}
+
+/* Pills: meta row (horizontal stack) */
+.hero.hero10 div:last-child div ul,
+.hero.hero10 div:last-child div ol {
+  display: flex;
+  flex-direction: row;
+  gap: 1.1em;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+.hero.hero10 div:last-child div ul li,
+.hero.hero10 div:last-child div ol li {
+  background: rgb(30 30 30 / 44%);
+  color: #f2f2f2;
+  font-size: 1rem;
+  border-radius: 2em;
+  padding: 0.3em 1em 0.3em 1.1em;
+  min-width: 56px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+/* Tag pills: second ul/ol in overlay */
+.hero.hero10 div:last-child div ul + ul,
+.hero.hero10 div:last-child div ol + ol {
+  margin-top: 0.5em;
+  gap: 0.7em;
+}
+
+.hero.hero10 div:last-child div ul + ul li,
+.hero.hero10 div:last-child div ol + ol li {
+  background: #fff;
+  color: #222;
+  border-radius: 1.5em;
+  border: 1px solid #e0e0e0;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.3em 1.1em;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 5%);
+  margin: 0;
+}
+
+/* Circular button at bottom of overlay/card */
+.hero.hero10 div:last-child div button,
+.hero.hero10 div:last-child div a.button,
+.hero.hero10 div:last-child div div {
+  margin-top: 1.7em;
+  background: #27ae60;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgb(39 174 96 / 16%);
+  width: 3.3em;
+  height: 3.3em;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6em;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Ensure images fill and cover if present as elements, not background */
+.hero.hero10 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
