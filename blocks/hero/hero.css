@@ -131,9 +131,11 @@
 
 
 .hero-wrapper {
-  background: #e57a18;
+  background: linear-gradient(#f3fbf8 0%, #fff 100%);
   position: relative;
   padding: 0;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .hero.hero7.block {
@@ -754,8 +756,6 @@
   display: flex;
   align-items: flex-start;
   background: #fce9dd;
-
-  /* Optional: background-image: url('watercolor-texture.png'); */
   padding: 2rem;
   border-radius: 1rem;
   position: relative;
@@ -763,7 +763,6 @@
   gap: 2rem;
 }
 
-/* Label bubble */
 .hero.hero26.block.no-image > div:first-child > div {
   background: #10B981;
   color: #fff;
@@ -778,7 +777,6 @@
   margin: 0;
 }
 
-/* Headline styling */
 .hero.hero26.block.no-image h1 {
   margin: 0;
   font-size: 2rem;
@@ -788,7 +786,6 @@
   align-self: center;
 }
 
-/* Responsive for mobile */
 @media (width <= 700px) {
   .hero.hero26.block.no-image {
     flex-direction: column;
@@ -799,4 +796,118 @@
   .hero.hero26.block.no-image h1 {
     font-size: 1.25rem;
   }
+}
+
+
+.hero.hero31.block {
+  /* Side by side on desktop, stacked on mobile */
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Make both children equal height if needed */
+  justify-content: center;
+  gap: 2rem; /* Space between image and text block */
+
+  /* Responsive stacking: */
+}
+
+@media (width <= 900px) {
+  .hero.hero31.block {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.hero.hero31.block > div:first-child {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.hero.hero31.block picture,
+.hero.hero31.block img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem; /* Optional: soften corners */
+}
+
+.hero.hero31.block > div:last-child {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 2rem 1rem;
+}
+
+.hero.hero31.block > div:last-child > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tastetrivia {
+  font-family: 'Baloo 2', Nunito, Quicksand, 'Arial Rounded MT Bold', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.02em;
+  background:
+    linear-gradient(to right, transparent 0%, transparent 42%, #21b3a7 42%, #21b3a7 100%);
+  color: #fff;
+  padding: 0.2em 0.8em;
+  border-radius: 2em;
+  position: relative;
+  display: inline-block;
+}
+
+#tastetrivia::first-letter {
+  color: #e48a19; /* orange for T ("Taste") */
+}
+
+#tastetrivia::after {
+  /* Speech-bubble triangle for "Trivla" side */
+  content: '';
+  position: absolute;
+  left: 68%;
+  bottom: -12px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #21b3a7;
+}
+
+.hero.hero31.block > div:last-child p {
+  background: #fcc24c;
+  border-radius: 2rem 1rem 2.5rem 1.5rem / 2.5rem 2rem 2rem 1.5rem;
+
+  /* Optional: more irregular border-radius for hand-drawn look */
+  padding: 2rem;
+  margin: 0;
+  font-family: 'Baloo 2', Nunito, Quicksand, 'Arial Rounded MT Bold', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgb(200 180 100 / 10%);
+  position: relative;
+  z-index: 1;
+  line-height: 1.35;
+
+  /* Optional: add jagged edges with SVG, see below */
+}
+
+.hero-wrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3rem;
+  background: url('/path/to/torn-paper-edge.svg') repeat-x top;
+  z-index: 0;
 }
