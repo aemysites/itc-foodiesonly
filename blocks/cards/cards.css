@@ -375,10 +375,9 @@
   text-align: center;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  word-break: break-word;
+  word-break: break-all;
 }
 
-/* Responsive: 2 columns on medium screens, 1 column on small screens */
 @media (width <= 900px) {
   .cards.cardsnoimages4 ul {
     flex-flow: row wrap;
@@ -404,4 +403,209 @@
     width: 100%;
     padding: 20px 6px 12px;
   }
+}
+
+
+.cards.cards6 {
+  /* Outer container: center, limit width, add vertical space */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 0 32px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Card Row: Horizontal flex, scroll on overflow, consistent gaps */
+.cards.cards6 ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 32px;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+/* Individual Cards: vertical stack, fixed width, rounded, shadow, green border */
+.cards.cards6 li {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 2px solid #1CC48A;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgb(28 196 138 / 9%);
+  min-width: 340px;
+  max-width: 350px;
+  height: 420px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: box-shadow 0.15s;
+}
+
+.cards.cards6 li:hover {
+  box-shadow: 0 8px 32px 0 rgb(28 196 138 / 17%);
+}
+
+/* Top image area: full width, rounded top, no margin */
+.cards.cards6 li .cards-card-image {
+  width: 100%;
+  min-height: 170px;
+  max-height: 210px;
+  background: #fff;
+  border-radius: 16px 16px 0 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make sure image fills container and has rounded corners */
+.cards.cards6 li .cards-card-image img,
+.cards.cards6 li .cards-card-image picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  display: block;
+}
+
+/* Main content column under image */
+.cards.cards6 li .cards-card-image ~ .cards-card-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 20px 20px;
+  box-sizing: border-box;
+  flex: 1 1 auto;
+  gap: 12px;
+}
+
+/* Actions row: horizontally aligned if present */
+.cards.cards6 li .cards-card-image ~ .cards-card-image .actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+/* Pill/tag: only style tags/pills, not all links or spans */
+.cards.cards6 li .cards-card-image ~ .cards-card-image .pill,
+.cards.cards6 li .cards-card-image ~ .cards-card-image a.pill,
+.cards.cards6 li .cards-card-image ~ .cards-card-image span.pill {
+  background: #363636;
+  color: #fff;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 18px;
+  margin-bottom: 8px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+/* Description: left-aligned, readable, not in a pill */
+.cards.cards6 li .cards-card-image ~ .cards-card-image p,
+.cards.cards6 li .cards-card-image ~ .cards-card-image .description {
+  color: #363636;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin: 0 0 7px;
+  line-height: 1.5;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Date/meta: always at bottom */
+.cards.cards6 li .cards-card-image ~ .cards-card-image .date,
+.cards.cards6 li .cards-card-image ~ .cards-card-image time,
+.cards.cards6 li .cards-card-image ~ .cards-card-image .meta,
+.cards.cards6 li .cards-card-image ~ .cards-card-image small {
+  color: #7C7C7C;
+  font-size: 0.92rem;
+  font-weight: 400;
+  margin-top: auto;
+  display: block;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+/* Action icons: small, round, grouped horizontally */
+.cards.cards6 li .cards-card-image ~ .cards-card-image .icon,
+.cards.cards6 li .cards-card-image ~ .cards-card-image .icon-button {
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+/* Remove pill styles from non-pill elements */
+.cards.cards6 li .cards-card-image ~ .cards-card-image a:not(.pill),
+.cards.cards6 li .cards-card-image ~ .cards-card-image span:not(.pill) {
+  background: none;
+  color: inherit;
+  border-radius: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin-bottom: 0;
+  text-align: left;
+  letter-spacing: normal;
+}
+
+/* Responsive: stack cards vertically on mobile, shrink padding, image stays top */
+@media (width <= 850px) {
+  .cards.cards6 ul {
+    gap: 16px;
+    max-width: 100%;
+  }
+
+  .cards.cards6 li {
+    min-width: 220px;
+    max-width: 97vw;
+    height: auto;
+  }
+
+  .cards.cards6 li .cards-card-image {
+    border-radius: 16px 16px 0 0;
+    min-height: 120px;
+    max-height: 220px;
+  }
+
+  .cards.cards6 li .cards-card-image img,
+  .cards.cards6 li .cards-card-image picture {
+    border-radius: 16px 16px 0 0;
+    height: 160px;
+    min-height: 100px;
+    max-height: 220px;
+  }
+
+  .cards.cards6 li .cards-card-image ~ .cards-card-image {
+    padding: 14px 8px 12px;
+    min-height: 100px;
+    gap: 6px;
+  }
+}
+
+/* Remove unwanted default spacing */
+.cards.cards6 ul,
+.cards.cards6 li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
