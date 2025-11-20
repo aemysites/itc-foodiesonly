@@ -8,6 +8,10 @@
   position: relative;
   padding: 40px 24px;
   min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .hero h1,
@@ -800,14 +804,11 @@
 
 
 .hero.hero31.block {
-  /* Side by side on desktop, stacked on mobile */
   display: flex;
   flex-direction: row;
-  align-items: stretch; /* Make both children equal height if needed */
+  align-items: stretch;
   justify-content: center;
-  gap: 2rem; /* Space between image and text block */
-
-  /* Responsive stacking: */
+  gap: 2rem;
 }
 
 @media (width <= 900px) {
@@ -830,7 +831,7 @@
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 1rem; /* Optional: soften corners */
+  border-radius: 1rem;
 }
 
 .hero.hero31.block > div:last-child {
@@ -866,11 +867,10 @@
 }
 
 #tastetrivia::first-letter {
-  color: #e48a19; /* orange for T ("Taste") */
+  color: #e48a19;
 }
 
 #tastetrivia::after {
-  /* Speech-bubble triangle for "Trivla" side */
   content: '';
   position: absolute;
   left: 68%;
@@ -885,8 +885,6 @@
 .hero.hero31.block > div:last-child p {
   background: #fcc24c;
   border-radius: 2rem 1rem 2.5rem 1.5rem / 2.5rem 2rem 2rem 1.5rem;
-
-  /* Optional: more irregular border-radius for hand-drawn look */
   padding: 2rem;
   margin: 0;
   font-family: 'Baloo 2', Nunito, Quicksand, 'Arial Rounded MT Bold', sans-serif;
@@ -898,8 +896,6 @@
   position: relative;
   z-index: 1;
   line-height: 1.35;
-
-  /* Optional: add jagged edges with SVG, see below */
 }
 
 .hero-wrapper::before {
@@ -910,4 +906,59 @@
   height: 3rem;
   background: url('/path/to/torn-paper-edge.svg') repeat-x top;
   z-index: 0;
+}
+
+.hero > div:first-child {
+  /* Left element - orange text block */
+  display: flex;
+  align-items: center;
+}
+
+.hero > div:first-child > div {
+  background: #dd6c1e;
+  color: #fff;
+  font-family: Nunito, 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  border-radius: 16px;
+  padding: 12px 28px;
+  min-width: 120px; /* adjust as needed */
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero > div:last-child {
+  /* Right element - green speech bubble */
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero > div:last-child > div {
+  background: #00b388;
+  color: #fff;
+  font-family: Nunito, 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  border-radius: 20px;
+  padding: 16px 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Speech bubble tail using a pseudo-element */
+.hero > div:last-child > div::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 16px solid #00b388;
 }
