@@ -1051,7 +1051,6 @@
   display: none;
 }
 
-/* Orange line at the bottom */
 .cards::after {
   content: '';
   position: absolute;
@@ -1079,4 +1078,196 @@
   .cards-card-image svg {
     height: 40px;
   }
+}
+
+
+.cards.cards22 {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 24px;
+}
+
+/* --- Outer Grid Layout --- */
+.cards.cards22 ul {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0 40px;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Responsive: stack on small screens */
+@media (width <= 900px) {
+  .cards.cards22 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/* --- Main Content Cards (first 5) --- */
+.cards.cards22 ul li:nth-child(-n+5) {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgb(0 0 0 / 8%);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+@media (width <= 900px) {
+  .cards.cards22 ul li:nth-child(-n+5) {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+}
+
+/* --- Card Image --- */
+.cards.cards22 .cards-card-image {
+  flex: 0 0 320px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+}
+
+.cards.cards22 .cards-card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px 0 0 16px;
+  display: block;
+}
+
+@media (width <= 900px) {
+  .cards.cards22 .cards-card-image {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+  }
+
+  .cards.cards22 .cards-card-image img {
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+/* --- Card Body --- */
+.cards.cards22 .cards-card-body {
+  flex: 1 1 0;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: none;
+}
+
+@media (width <= 900px) {
+  .cards.cards22 .cards-card-body {
+    padding: 24px 18px;
+  }
+}
+
+/* --- Headings --- */
+.cards.cards22 .cards-card-body h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 14px;
+}
+
+.cards.cards22 .cards-card-body p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* --- Sidebar Cards (nth-child 6-8) --- */
+.cards.cards22 ul li:nth-child(6),
+.cards.cards22 ul li:nth-child(7),
+.cards.cards22 ul li:nth-child(8) {
+  grid-column: 2 / span 1;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  min-height: 110px;
+  margin-bottom: 18px;
+  padding: 12px 16px;
+}
+
+/* Blog card accent colors for h3 */
+.cards.cards22 ul li:nth-child(6) h3 { color: #f9a800; }
+.cards.cards22 ul li:nth-child(7) h3 { color: #e54b2a; }
+.cards.cards22 ul li:nth-child(8) h3 { color: #28b8b8; }
+
+.cards.cards22 ul li:nth-child(6) .cards-card-image img,
+.cards.cards22 ul li:nth-child(7) .cards-card-image img,
+.cards.cards22 ul li:nth-child(8) .cards-card-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 14px;
+}
+
+.cards.cards22 ul li:nth-child(6) .cards-card-body,
+.cards.cards22 ul li:nth-child(7) .cards-card-body,
+.cards.cards22 ul li:nth-child(8) .cards-card-body {
+  padding: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* Responsive: sidebar cards stack with main cards */
+@media (width <= 900px) {
+  .cards.cards22 ul li:nth-child(6),
+  .cards.cards22 ul li:nth-child(7),
+  .cards.cards22 ul li:nth-child(8) {
+    grid-column: auto;
+    margin-bottom: 28px;
+    min-height: 96px;
+  }
+}
+
+/* --- Special Paint-Effect Blocks (last 3 li) --- */
+.cards.cards22 ul li:nth-child(n+9) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 36px;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Blurb badge (first .cards-card-body in these li) */
+.cards.cards22 ul li:nth-child(n+9) .cards-card-body:first-child p {
+  background: #32e5ce;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 999px;
+  padding: 8px 28px;
+  margin-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+}
+
+.cards.cards22 ul li:nth-child(n+9) .cards-card-body:last-child p {
+  background: linear-gradient(135deg, #f9a800 84%, #fbe17d 100%);
+  color: #fff;
+  font-size: 18px;
+  padding: 32px 36px;
+  border-radius: 30px 60px 40px 50px / 26px 48px 36px 40px; /* irregular "paint" shape */
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 7%);
 }
