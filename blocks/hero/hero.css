@@ -49,27 +49,25 @@
 
 .hero5.block {
   display: flex;
-  flex-direction: row;         /* Side by side */
-  align-items: center;         /* Vertically center content */
-  justify-content: center;     /* Horizontally center if desired */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  min-height: 60vh;            /* or set as needed for your design */
+  min-height: 60vh;
   box-sizing: border-box;
   overflow: hidden;
-  padding: 0;                  /* Remove default padding */
+  padding: 0;
 }
 
 .hero5.block > div:first-child {
-  /* This is the image side */
-  width: 50%;                  /* Adjust as needed for split ratio */
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero5.block > div:last-child {
-  /* This is the text/content side */
-  width: 50%;                  /* Adjust as needed */
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;  
@@ -129,4 +127,86 @@
     max-width: 100vw;
     padding: 2rem 1rem;
   }
+}
+
+
+.hero-wrapper {
+  background: #e57a18;
+  position: relative;
+  padding: 0;
+}
+
+.hero.hero7.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+/* Desktop: side by side */
+@media (width >= 768px) {
+  .hero.hero7.block {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .hero.hero7.block > div {
+    flex: 1 1 0;
+    max-width: 50%;
+  }
+}
+
+/* Mobile: stacked */
+@media (width <= 767px) {
+  .hero.hero7.block > div {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.hero.hero7.block > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero.hero7.block picture,
+.hero.hero7.block img {
+  max-width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px rgb(0 0 0 / 13%);
+  background: #fff;
+  padding: 1rem;
+}
+
+.hero.hero7.block > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  gap: 1.5rem;
+}
+
+.hero.hero7.block h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: 'Comic Sans MS', Baloo, Poppins, cursive, sans-serif;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+  line-height: 1.1;
+  text-shadow: 2px 2px 0 #a85510, 0 4px 20px rgb(0 0 0 / 25%);
+}
+
+.hero.hero7.block p {
+  color: #fff;
+  font-size: 1.15rem;
+  margin: 0;
+  line-height: 1.5;
+  text-shadow: 1px 1px 0 rgb(50 20 0 / 10%);
 }
