@@ -516,7 +516,6 @@
   min-height: 120px;
 }
 
-/* Arrange the inner divs as columns, side by side */
 .hero.hero18 div {
   display: flex;
   flex-direction: row;
@@ -524,7 +523,6 @@
   min-width: 0;
 }
 
-/* If there is an empty div (for structural alignment/spacing), give it width but no content */
 .hero.hero18 div div:empty {
   min-width: 90px;
   height: 44px;
@@ -534,7 +532,6 @@
   margin-right: 18px;
 }
 
-/* Headline bubble styling (center element) */
 .hero.hero18 div div h1 {
   background: #18C29C;
   color: #fff;
@@ -554,7 +551,6 @@
   white-space: pre-line;
 }
 
-/* Bubble pointer */
 .hero.hero18 div div h1::after {
   position: absolute;
   left: 48px;
@@ -567,12 +563,10 @@
   content: "";
 }
 
-/* spacing between "columns" inside hero: if there are 3, this will apply */
 .hero.hero18 div:not(:last-child) {
   margin-right: 18px;
 }
 
-/* Orange label styling for any elements in left/right columns (should be in HTML) */
 .hero.hero18 div span,
 .hero.hero18 div strong,
 .hero.hero18 div p {
@@ -584,7 +578,6 @@
   line-height: 1.1;
 }
 
-/* Responsive: stack vertically and reduce padding on mobile */
 @media (width <= 700px) {
   .hero.hero18 {
     flex-direction: column;
@@ -626,7 +619,6 @@
   }
 }
 
-/* If using a picture/image block inside hero, lay out with flex and object-fit. */
 .hero.hero18 .picture {
   z-index: initial;
   flex: 1;
@@ -647,8 +639,121 @@
   display: block;
 }
 
-/* Remove extra top and bottom margin from h1 */
 .hero.hero18 h1 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+
+.hero21.block {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* vertically center content */
+  justify-content: space-between;
+
+  /* Background image, rounded corners, padding, etc. */
+  background-image: url('YOUR-BACKGROUND-IMAGE-URL-HERE');
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 40px; /* Adjust as needed */
+  border-bottom-right-radius: 40px;
+  padding: 40px 60px; /* adjust for spacing */
+  box-sizing: border-box;
+  min-height: 340px; /* or whatever you need */
+}
+
+/* Left Section (Image) */
+.hero21.block > div:first-child {
+  flex: 1 1 40%; /* allow it to grow, shrink, and take about 40% of width */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0; /* For flexbox image shrink */
+  padding-right: 40px; /* Space between image and text */
+}
+
+.hero21.block > div:first-child img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* optional, matches overall rounded look */
+  box-shadow: 0 4px 24px rgb(0 0 0 / 12%);
+}
+
+/* Right Section (Text & Button) */
+.hero21.block > div:last-child {
+  flex: 1 1 60%; /* Take the rest of the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 0;
+  padding-left: 40px;
+}
+
+/* Headline Styling */
+.hero21.block h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  font-family: Inter, Arial, sans-serif;
+  text-shadow: 0 2px 8px rgb(0 0 0 / 25%);
+}
+
+/* "Button" and Icon Styling */
+.hero21.block p {
+  margin: 0;
+}
+
+.hero21.block p a {
+  display: inline-flex;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 32px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  margin-right: 10px; /* if there are multiple links */
+  transition: background 0.2s;
+}
+
+.hero21.block p a:hover,
+.hero21.block p a:focus {
+  background: #222;
+}
+
+.hero21.block p picture {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.hero21.block p picture img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+
+  /* If you want it white, use a CSS filter or provide white icon */
+}
+
+/* Responsive Adjustments */
+@media (width <= 900px) {
+  .hero21.block {
+    flex-direction: column;
+    padding: 20px 16px;
+    border-radius: 24px;
+    min-height: 0;
+  }
+
+  .hero21.block > div:first-child,
+  .hero21.block > div:last-child {
+    padding: 0;
+    width: 100%;
+  }
 }
