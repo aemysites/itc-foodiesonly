@@ -407,7 +407,6 @@
 
 
 .cards.cards6 {
-  /* Outer container: center, limit width, add vertical space */
   max-width: 1200px;
   margin: 0 auto;
   padding: 48px 0 32px;
@@ -415,7 +414,6 @@
   box-sizing: border-box;
 }
 
-/* Card Row: Horizontal flex, scroll on overflow, consistent gaps */
 .cards.cards6 ul {
   display: flex;
   flex-wrap: nowrap;
@@ -429,7 +427,6 @@
   scrollbar-width: thin;
 }
 
-/* Individual Cards: vertical stack, fixed width, rounded, shadow, green border */
 .cards.cards6 li {
   display: flex;
   flex-direction: column;
@@ -451,7 +448,6 @@
   box-shadow: 0 8px 32px 0 rgb(28 196 138 / 17%);
 }
 
-/* Top image area: full width, rounded top, no margin */
 .cards.cards6 li .cards-card-image {
   width: 100%;
   min-height: 170px;
@@ -464,7 +460,6 @@
   justify-content: center;
 }
 
-/* Make sure image fills container and has rounded corners */
 .cards.cards6 li .cards-card-image img,
 .cards.cards6 li .cards-card-image picture {
   width: 100%;
@@ -474,7 +469,6 @@
   display: block;
 }
 
-/* Main content column under image */
 .cards.cards6 li .cards-card-image ~ .cards-card-image {
   width: 100%;
   display: flex;
@@ -486,7 +480,6 @@
   gap: 12px;
 }
 
-/* Actions row: horizontally aligned if present */
 .cards.cards6 li .cards-card-image ~ .cards-card-image .actions {
   display: flex;
   flex-direction: row;
@@ -496,7 +489,6 @@
   margin-top: 0;
 }
 
-/* Pill/tag: only style tags/pills, not all links or spans */
 .cards.cards6 li .cards-card-image ~ .cards-card-image .pill,
 .cards.cards6 li .cards-card-image ~ .cards-card-image a.pill,
 .cards.cards6 li .cards-card-image ~ .cards-card-image span.pill {
@@ -512,7 +504,6 @@
   letter-spacing: 0.01em;
 }
 
-/* Description: left-aligned, readable, not in a pill */
 .cards.cards6 li .cards-card-image ~ .cards-card-image p,
 .cards.cards6 li .cards-card-image ~ .cards-card-image .description {
   color: #363636;
@@ -524,7 +515,6 @@
   box-sizing: border-box;
 }
 
-/* Date/meta: always at bottom */
 .cards.cards6 li .cards-card-image ~ .cards-card-image .date,
 .cards.cards6 li .cards-card-image ~ .cards-card-image time,
 .cards.cards6 li .cards-card-image ~ .cards-card-image .meta,
@@ -538,7 +528,6 @@
   text-align: left;
 }
 
-/* Action icons: small, round, grouped horizontally */
 .cards.cards6 li .cards-card-image ~ .cards-card-image .icon,
 .cards.cards6 li .cards-card-image ~ .cards-card-image .icon-button {
   border-radius: 50%;
@@ -554,7 +543,6 @@
   vertical-align: middle;
 }
 
-/* Remove pill styles from non-pill elements */
 .cards.cards6 li .cards-card-image ~ .cards-card-image a:not(.pill),
 .cards.cards6 li .cards-card-image ~ .cards-card-image span:not(.pill) {
   background: none;
@@ -568,7 +556,6 @@
   letter-spacing: normal;
 }
 
-/* Responsive: stack cards vertically on mobile, shrink padding, image stays top */
 @media (width <= 850px) {
   .cards.cards6 ul {
     gap: 16px;
@@ -602,10 +589,191 @@
   }
 }
 
-/* Remove unwanted default spacing */
 .cards.cards6 ul,
 .cards.cards6 li {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+
+.cards.cards8 {
+  /* Container padding for visual balance */
+  padding: 40px 0;
+}
+
+/* Card list: Use CSS Grid for multi-row/column layout, center cards */
+.cards.cards8 ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  place-items: start center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Individual card styling */
+.cards.cards8 li {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 10%);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  max-width: 370px;
+  transition: box-shadow 0.2s;
+}
+
+/* Top image section: always first image inside .cards-card-image */
+.cards.cards8 .cards-card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  display: block;
+  background: var(--light-color);
+}
+
+/* Card body/info section (always stacks vertically!) */
+.cards.cards8 .cards-card-image:not(:first-child) {
+  background: #fff;
+  padding: 26px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* Overlay pill label: always absolutely positioned, on image area if possible */
+.cards.cards8 .cards-card-image:not(:first-child) a[href]:first-child {
+  position: absolute;
+  top: -18px;
+  left: 20px;
+  background: var(--dark-color);
+  color: #fff;
+  border-radius: 12px;
+  font-size: var(--body-font-size-xs);
+  font-weight: 600;
+  padding: 7px 16px;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+  line-height: 1.3;
+  text-decoration: none;
+  pointer-events: auto;
+  border: none;
+}
+
+/* Heart/favorite icon overlay: top right of info panel */
+.cards.cards8 .cards-card-image:not(:first-child) img[alt*="heart"] {
+  position: absolute;
+  top: -18px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 11%);
+  padding: 5px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Stats/date row: flex row aligns items side by side */
+.cards.cards8 .cards-card-image:not(:first-child) p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: var(--body-font-size-xs);
+  color: #888;
+  margin: 0 0 4px;
+  padding: 0;
+  word-break: normal;
+}
+
+/* Card title: always stacked below stats; visually prominent */
+.cards.cards8 .cards-card-image:not(:first-child) a:last-of-type {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+  line-height: 1.3;
+  word-break: break-word;
+  display: block;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  padding: 0;
+}
+
+/* Card title hover effect */
+.cards.cards8 .cards-card-image:not(:first-child) a:last-of-type:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* Remove underline on pill label hover */
+.cards.cards8 .cards-card-image:not(:first-child) a[href]:first-child:hover {
+  color: #fff;
+  text-decoration: none;
+  border: none;
+}
+
+/* Remove border from links in card */
+.cards.cards8 .cards-card-image a {
+  border: none;
+}
+
+/* Responsive stacking for cards on small screens */
+@media (width <= 800px) {
+  .cards.cards8 ul {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .cards.cards8 li {
+    max-width: 98vw;
+    margin: 0 auto;
+  }
+
+  .cards.cards8 .cards-card-image:not(:first-child) {
+    padding: 18px 10px 14px;
+    gap: 10px;
+  }
+
+  .cards.cards8 .cards-card-image:not(:first-child) a[href]:first-child {
+    top: -12px;
+    left: 10px;
+    padding: 5px 11px;
+    font-size: 12px;
+  }
+
+  .cards.cards8 .cards-card-image:not(:first-child) img[alt*="heart"] {
+    right: 10px;
+    top: -12px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Ensure all card content areas stack vertically */
+.cards.cards8 .cards-card-image,
+.cards.cards8 .cards-card-image:not(:first-child) {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Fix possible accidental horizontal overflow */
+.cards.cards8 li,
+.cards.cards8 .cards-card-image,
+.cards.cards8 ul {
   box-sizing: border-box;
 }
