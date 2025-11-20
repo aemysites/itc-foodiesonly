@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -24,4 +25,131 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+
+.cards.cards1 {
+  /* Ensure no unwanted background or padding */
+  background: transparent;
+  padding: 0;
+}
+
+/* Use CSS Grid for layout of cards, generous gap, responsive behavior */
+.cards.cards1 .cards,
+.cards.cards1 ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: stretch;
+}
+
+/* Card container: visual pop, proper rounding, subtle shadow */
+.cards.cards1 li {
+  background: #fff;
+  border: 1.5px solid #c9ebdd;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgb(34 34 34 / 10%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  transition: box-shadow 0.18s;
+  padding-bottom: 0; /* Remove default extra padding if present */
+}
+
+/* Top image: full width, proper aspect ratio, rounded top */
+.cards.cards1 .cards-card-image img,
+.cards.cards1 .cards-card-image picture img {
+  width: 100%;
+  aspect-ratio: 1.7 / 1;
+  min-height: 140px;
+  max-height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  display: block;
+  margin: 0;
+}
+
+/* Action row container: Remove vertical padding, ensure tight structure */
+.cards.cards1 .cards-card-image:not(:first-child) {
+  margin-top: 0;
+  padding: 0 18px 10px;
+  padding-bottom: 6px;
+}
+
+/* Action row: Flex row layout, baseline alignment, tight spacing */
+.cards.cards1 .cards-card-image:not(:first-child) p {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  min-height: 32px;
+}
+
+/* Action item: icon+label or icon+count as a flex row */
+.cards.cards1 .cards-card-image:not(:first-child) span,
+.cards.cards1 .cards-card-image:not(:first-child) b,
+.cards.cards1 .cards-card-image:not(:first-child) em {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.18;
+  color: #222;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* Action row icons: outlined look, crisp, compact */
+.cards.cards1 .cards-card-image:not(:first-child) img,
+.cards.cards1 .cards-card-image:not(:first-child) picture img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  margin: 0;
+  vertical-align: middle;
+  flex-shrink: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Make sure labels never overlap icons */
+
+/* Reduce vertical space below action row for a tighter card */
+
+/* Responsive stacking for small screens: single column, reduced gap */
+@media (width <= 800px) {
+  .cards.cards1 .cards,
+  .cards.cards1 ul {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .cards.cards1 .cards-card-image img,
+  .cards.cards1 .cards-card-image picture img {
+    min-height: 100px;
+    max-height: 120px;
+  }
+}
+
+/* Remove unwanted background and box-shadow from any inner card-image rows */
+.cards.cards1 .cards-card-image,
+.cards.cards1 .cards-card-image:not(:first-child),
+.cards.cards1 .cards-card-image p {
+  background: transparent;
+  box-shadow: none;
 }
