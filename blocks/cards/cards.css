@@ -1006,32 +1006,49 @@
 
 
 .cards {
-  background: #fff;
+  background: #FAF4DF;
   position: relative;
-  padding-bottom: 20px;
   width: 100%;
   min-height: 64px;
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgb(46 91 255 / 8%);
+  padding: 56px 0 72px;
+  overflow: visible;
 }
 
 .cards ul {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 32px;
+  align-items: stretch;
+  gap: 36px;
   margin: 0;
-  padding: 0;
+  padding: 0 48px;
   list-style: none;
   width: 100%;
+  overflow: auto visible;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: 48px;
+  scroll-padding-right: 48px;
+  scrollbar-width: none;
 }
 
 .cards ul li {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  background: #fff;
+  border: 1.5px solid #D1EBF7;
+  box-shadow: 0 4px 24px rgb(46 91 255 / 9%), 0 1.5px 6px #D1EBF7;
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  flex-direction: row;
+  border-radius: 20px;
+  min-width: 340px;
+  max-width: 420px;
+  height: 340px;
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+  transition: box-shadow 0.16s;
 }
 
 .cards-card-image img,
@@ -1088,7 +1105,6 @@
   padding: 0 24px;
 }
 
-/* --- Outer Grid Layout --- */
 .cards.cards22 ul {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -1099,7 +1115,6 @@
   list-style: none;
 }
 
-/* Responsive: stack on small screens */
 @media (width <= 900px) {
   .cards.cards22 ul {
     display: flex;
@@ -1108,7 +1123,6 @@
   }
 }
 
-/* --- Main Content Cards (first 5) --- */
 .cards.cards22 ul li:nth-child(-n+5) {
   background: #fff;
   border-radius: 16px;
@@ -1127,7 +1141,6 @@
   }
 }
 
-/* --- Card Image --- */
 .cards.cards22 .cards-card-image {
   flex: 0 0 320px;
   width: 320px;
@@ -1155,7 +1168,6 @@
   }
 }
 
-/* --- Card Body --- */
 .cards.cards22 .cards-card-body {
   flex: 1 1 0;
   padding: 32px 28px;
@@ -1171,7 +1183,6 @@
   }
 }
 
-/* --- Headings --- */
 .cards.cards22 .cards-card-body h2 {
   font-size: 18px;
   font-weight: 700;
@@ -1186,7 +1197,6 @@
   line-height: 1.6;
 }
 
-/* --- Sidebar Cards (nth-child 6-8) --- */
 .cards.cards22 ul li:nth-child(6),
 .cards.cards22 ul li:nth-child(7),
 .cards.cards22 ul li:nth-child(8) {
@@ -1202,8 +1212,6 @@
   margin-bottom: 18px;
   padding: 12px 16px;
 }
-
-/* Blog card accent colors for h3 */
 .cards.cards22 ul li:nth-child(6) h3 { color: #f9a800; }
 .cards.cards22 ul li:nth-child(7) h3 { color: #e54b2a; }
 .cards.cards22 ul li:nth-child(8) h3 { color: #28b8b8; }
@@ -1226,7 +1234,6 @@
   color: #fff;
 }
 
-/* Responsive: sidebar cards stack with main cards */
 @media (width <= 900px) {
   .cards.cards22 ul li:nth-child(6),
   .cards.cards22 ul li:nth-child(7),
@@ -1237,7 +1244,6 @@
   }
 }
 
-/* --- Special Paint-Effect Blocks (last 3 li) --- */
 .cards.cards22 ul li:nth-child(n+9) {
   display: flex;
   flex-direction: column;
@@ -1248,7 +1254,6 @@
   border-radius: 0;
 }
 
-/* Blurb badge (first .cards-card-body in these li) */
 .cards.cards22 ul li:nth-child(n+9) .cards-card-body:first-child p {
   background: #32e5ce;
   color: #fff;
@@ -1266,8 +1271,164 @@
   color: #fff;
   font-size: 18px;
   padding: 32px 36px;
-  border-radius: 30px 60px 40px 50px / 26px 48px 36px 40px; /* irregular "paint" shape */
+  border-radius: 30px 60px 40px 50px / 26px 48px 36px 40px;
   text-align: center;
   font-weight: 500;
   box-shadow: 0 8px 24px rgb(0 0 0 / 7%);
+}
+
+/* Horizontally scrolling carousel with full card visibility */
+
+/* Individual card: flex row, image left, content right */
+
+.cards ul li:hover {
+  box-shadow: 0 8px 32px 0 rgb(46 91 255 / 14%), 0 3px 12px 0 #D1EBF7;
+}
+
+/* Left column: image wrapper */
+.cards ul li .cards-card-image {
+  flex: 0 0 44%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FAF4DF;
+  min-width: 0;
+  padding: 0;
+  position: relative;
+  border-radius: 20px 0 0 20px;
+}
+
+/* Large circular image */
+.cards ul li .cards-card-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgb(220 180 60 / 10%);
+  display: block;
+}
+
+/* Right column: content wrapper */
+.cards ul li .cards-card-image .cards-card-image {
+  flex-direction: column;
+}
+
+.cards ul li .cards-card-image + .cards-card-image {
+  flex: 1 1 56%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #fff;
+  padding: 28px 22px 18px 18px;
+  border-radius: 0 20px 20px 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Card title: prominent, cropped to two lines */
+.cards ul li .cards-card-image + .cards-card-image p {
+  color: #282828;
+  font-size: 1.12rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+  line-height: 1.32;
+  max-height: 2.7em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.01em;
+  white-space: normal;
+}
+
+/* Meta bar or info line at the bottom */
+.cards ul li .cards-card-image + .cards-card-image .meta-bar,
+.cards ul li .cards-card-image + .cards-card-image span {
+  display: flex;
+  align-items: center;
+  background: #FFF5E0;
+  border-radius: 12px;
+  padding: 8px 12px;
+  font-size: 1em;
+  margin-top: 16px;
+  gap: 10px;
+  color: #282828;
+  width: 100%;
+  min-height: 36px;
+}
+
+/* Links in card content area */
+.cards ul li .cards-card-image + .cards-card-image a {
+  color: #828282;
+  font-size: 1em;
+  margin-right: 12px;
+  margin-bottom: 0;
+  text-decoration: none;
+  transition: color 0.16s;
+}
+
+.cards ul li .cards-card-image + .cards-card-image a:hover {
+  color: #282828;
+  text-decoration: underline;
+}
+
+/* Responsive stacking for mobile/small screens */
+@media (width <= 900px) {
+  .cards {
+    padding: 24px 0 32px;
+  }
+
+  .cards ul {
+    gap: 18px;
+    padding: 0 8px;
+    scroll-padding-left: 8px;
+    scroll-padding-right: 8px;
+  }
+
+  .cards ul li {
+    flex-direction: column;
+    min-width: 0;
+    max-width: 98vw;
+    height: auto;
+    border-radius: 18px;
+    margin-bottom: 8px;
+  }
+
+  .cards ul li .cards-card-image,
+  .cards ul li .cards-card-image + .cards-card-image {
+    border-radius: 18px 18px 0 0;
+    flex: unset;
+    min-width: 0;
+    width: 100%;
+    padding: 18px 8px 0;
+    justify-content: center;
+  }
+
+  .cards ul li .cards-card-image + .cards-card-image {
+    border-radius: 0 0 18px 18px;
+    padding: 14px 8px;
+  }
+}
+
+/* Hide scroll bar for aesthetics */
+.cards ul::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Decorative stick for block right edge if present in DOM */
+.cards .cards-decoration-stick {
+  position: absolute;
+  top: 32px;
+  right: 14px;
+  width: 10px;
+  height: 150px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #FFB35A 0 16px,
+    #23B37D 16px 32px,
+    #fff 32px 44px
+  );
+  border-radius: 6px;
+  opacity: 0.7;
+  z-index: 1;
 }
