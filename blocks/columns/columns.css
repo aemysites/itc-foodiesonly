@@ -1,7 +1,9 @@
 /* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
 }
 
 .columns img {
@@ -40,7 +42,6 @@
   padding: 0;
 }
 
-/* Layout the three columns side by side, vertically and horizontally centered */
 .columns.columns9 .block.columns-3-cols {
   display: grid;
   grid-template-columns: 1fr 1.1fr 1fr;
@@ -52,7 +53,6 @@
   box-sizing: border-box;
 }
 
-/* Each column container inside the grid */
 .columns.columns9 .block.columns-3-cols div {
   display: flex;
   flex-direction: column;
@@ -64,7 +64,6 @@
   padding: 0;
 }
 
-/* --- Left column: logo/text --- */
 .columns.columns9 .block.columns-3-cols div:first-child {
   align-items: flex-start;
   justify-content: center;
@@ -80,7 +79,6 @@
   letter-spacing: 0.5px;
 }
 
-/* --- Middle column: vertically stacked form elements --- */
 .columns.columns9 .block.columns-3-cols div:nth-child(2) {
   align-items: flex-start;
   gap: 16px;
@@ -92,7 +90,6 @@
   width: 100%;
 }
 
-/* Heading/title */
 .columns.columns9 .block.columns-3-cols div:nth-child(2) p:nth-child(1) {
   color: #232323;
   font-size: 1.09rem;
@@ -100,7 +97,6 @@
   margin-bottom: 2px;
 }
 
-/* Simulated input field */
 .columns.columns9 .block.columns-3-cols div:nth-child(2) p:nth-child(2) {
   background: #ffefdb;
   border: 1px solid #232323;
@@ -115,7 +111,6 @@
   box-sizing: border-box;
 }
 
-/* Checkbox/consent legal text row */
 .columns.columns9 .block.columns-3-cols div:nth-child(2) p:nth-child(3) {
   display: flex;
   align-items: center;
@@ -131,7 +126,6 @@
   text-decoration: underline;
 }
 
-/* Simulated subscribe button */
 .columns.columns9 .block.columns-3-cols div:nth-child(2) p:nth-child(4) {
   background: #e3e3e3;
   color: #232323;
@@ -148,7 +142,6 @@
   transition: background 0.15s;
 }
 
-/* --- Right column: two vertical link lists, side by side, with divider --- */
 .columns.columns9 .block.columns-3-cols div:nth-child(3) {
   flex-direction: row;
   align-items: flex-start;
@@ -159,7 +152,6 @@
   width: 100%;
 }
 
-/* Each link list is a vertical stack */
 .columns.columns9 .block.columns-3-cols div:nth-child(3) p {
   display: flex;
   flex-direction: column;
@@ -171,13 +163,11 @@
   min-width: 90px;
 }
 
-/* Divider between lists */
 .columns.columns9 .block.columns-3-cols div:nth-child(3) p + p {
   border-left: 1px solid #232323;
   padding-left: 24px;
 }
 
-/* Link styling: black, underline on hover, orange on hover */
 .columns.columns9 .block.columns-3-cols div:nth-child(3) a {
   color: #232323;
   text-decoration: none;
@@ -192,7 +182,6 @@
   text-decoration: underline;
 }
 
-/* --- Responsive adjustments --- */
 @media (width <= 900px) {
   .columns.columns9 .block.columns-3-cols {
     grid-template-columns: 1fr;
@@ -219,5 +208,128 @@
     border-left: none;
     padding-left: 0;
     margin-top: 18px;
+  }
+}
+
+
+.columns-wrapper {
+  /* Center the modal absolutely in the viewport */
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  background: rgb(255 255 255 / 20%); /* transparent overlay, adjust as needed */
+  z-index: 1000;
+
+  /* Optionally add a backdrop-filter: blur(4px); for a blurred bg effect */
+}
+
+.columns {
+  background: #fff;
+  box-shadow: 0 6px 24px 0 rgb(34 34 34 / 15%);
+  border-radius: 16px;
+  padding: 32px;
+  min-width: 720px; /* Or desired width */
+  max-width: 90vw;
+}
+
+/* Hide the first div (with 'null') */
+.columns > div > div:first-child {
+  display: none;
+}
+
+.columns > div > div:nth-child(2),
+.columns > div > div:nth-child(3) {
+  /* Make them flex children of equal width */
+  flex: 1 1 0;
+  min-width: 0;
+
+  /* Add optional padding */
+}
+
+/* Second Div (Subscription Block): */
+.columns > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Center content vertically if desired */
+
+  /* Add any background, border, box-shadow as needed */
+}
+
+.columns > div > div:nth-child(2) p:first-child {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.columns > div > div:nth-child(2) p:nth-child(2) {
+  /* Email label styling */
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.columns > div > div:nth-child(2) p:nth-child(3) {
+  /* Privacy disclaimer */
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.columns > div > div:nth-child(2) p:nth-child(4) {
+  /* "Subscribe" button style */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #28A67A;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 24px;
+  height: 48px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgb(40 166 122 / 15%);
+  margin-bottom: 0;
+
+  /* Optionally add arrow icon as :after content */
+}
+
+/* Third Div (Links Footer): */
+.columns > div > div:nth-child(3) {
+  background: #B2E3D3;
+  border-radius: 12px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 180px; /* or adjust as needed */
+}
+
+.columns > div > div:nth-child(3) a {
+  color: #222;
+  font-weight: 500;
+  margin-right: 12px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Responsiveness */
+@media (width <= 600px) {
+  .columns {
+    min-width: unset;
+    padding: 12px;
+  }
+
+  .columns > div {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .columns > div > div:nth-child(3) {
+    min-width: 0;
+    padding: 12px 8px;
   }
 }
