@@ -648,40 +648,36 @@
 .hero21.block {
   display: flex;
   flex-direction: row;
-  align-items: center; /* vertically center content */
+  align-items: center;
   justify-content: space-between;
-
-  /* Background image, rounded corners, padding, etc. */
   background-image: url('YOUR-BACKGROUND-IMAGE-URL-HERE');
   background-size: cover;
   background-position: center;
-  border-top-right-radius: 40px; /* Adjust as needed */
+  border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
-  padding: 40px 60px; /* adjust for spacing */
+  padding: 40px 60px;
   box-sizing: border-box;
-  min-height: 340px; /* or whatever you need */
+  min-height: 340px;
 }
 
-/* Left Section (Image) */
 .hero21.block > div:first-child {
-  flex: 1 1 40%; /* allow it to grow, shrink, and take about 40% of width */
+  flex: 1 1 40%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-width: 0; /* For flexbox image shrink */
-  padding-right: 40px; /* Space between image and text */
+  min-width: 0;
+  padding-right: 40px;
 }
 
 .hero21.block > div:first-child img {
   max-width: 100%;
   height: auto;
-  border-radius: 20px; /* optional, matches overall rounded look */
+  border-radius: 20px;
   box-shadow: 0 4px 24px rgb(0 0 0 / 12%);
 }
 
-/* Right Section (Text & Button) */
 .hero21.block > div:last-child {
-  flex: 1 1 60%; /* Take the rest of the space */
+  flex: 1 1 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -690,7 +686,6 @@
   padding-left: 40px;
 }
 
-/* Headline Styling */
 .hero21.block h1 {
   color: #fff;
   font-size: 2rem;
@@ -702,7 +697,6 @@
   text-shadow: 0 2px 8px rgb(0 0 0 / 25%);
 }
 
-/* "Button" and Icon Styling */
 .hero21.block p {
   margin: 0;
 }
@@ -718,7 +712,7 @@
   font-weight: 500;
   text-decoration: none;
   box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
-  margin-right: 10px; /* if there are multiple links */
+  margin-right: 10px;
   transition: background 0.2s;
 }
 
@@ -738,11 +732,8 @@
   height: 24px;
   margin-right: 8px;
   vertical-align: middle;
-
-  /* If you want it white, use a CSS filter or provide white icon */
 }
 
-/* Responsive Adjustments */
 @media (width <= 900px) {
   .hero21.block {
     flex-direction: column;
@@ -755,5 +746,57 @@
   .hero21.block > div:last-child {
     padding: 0;
     width: 100%;
+  }
+}
+
+
+.hero.hero26.block.no-image {
+  display: flex;
+  align-items: flex-start;
+  background: #fce9dd;
+
+  /* Optional: background-image: url('watercolor-texture.png'); */
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+/* Label bubble */
+.hero.hero26.block.no-image > div:first-child > div {
+  background: #10B981;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.125rem;
+  font-family: sans-serif;
+  padding: 0.5em 1.5em;
+  border-radius: 1.5em 1.5em 1.5em 0.5em / 1.5em 1.5em 0.5em;
+  box-shadow: 0 2px 8px rgb(16 185 129 / 15%);
+  align-self: flex-start;
+  white-space: nowrap;
+  margin: 0;
+}
+
+/* Headline styling */
+.hero.hero26.block.no-image h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: #222;
+  font-weight: 700;
+  align-self: center;
+}
+
+/* Responsive for mobile */
+@media (width <= 700px) {
+  .hero.hero26.block.no-image {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 0.75rem;
+  }
+
+  .hero.hero26.block.no-image h1 {
+    font-size: 1.25rem;
   }
 }
