@@ -213,14 +213,11 @@
 
 
 .columns-wrapper {
-  /* Center the modal absolutely in the viewport */
   position: fixed;
   top: 0; left: 0; width: 100vw; height: 100vh;
   display: flex; align-items: center; justify-content: center;
-  background: rgb(255 255 255 / 20%); /* transparent overlay, adjust as needed */
+  background: rgb(255 255 255 / 20%);
   z-index: 1000;
-
-  /* Optionally add a backdrop-filter: blur(4px); for a blurred bg effect */
 }
 
 .columns {
@@ -228,33 +225,24 @@
   box-shadow: 0 6px 24px 0 rgb(34 34 34 / 15%);
   border-radius: 16px;
   padding: 32px;
-  min-width: 720px; /* Or desired width */
+  min-width: 720px;
   max-width: 90vw;
 }
 
-/* Hide the first div (with 'null') */
 .columns > div > div:first-child {
   display: none;
 }
 
 .columns > div > div:nth-child(2),
 .columns > div > div:nth-child(3) {
-  /* Make them flex children of equal width */
   flex: 1 1 0;
   min-width: 0;
-
-  /* Add optional padding */
 }
 
-/* Second Div (Subscription Block): */
 .columns > div > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  /* Center content vertically if desired */
-
-  /* Add any background, border, box-shadow as needed */
 }
 
 .columns > div > div:nth-child(2) p:first-child {
@@ -266,21 +254,18 @@
 }
 
 .columns > div > div:nth-child(2) p:nth-child(2) {
-  /* Email label styling */
   font-size: 16px;
   color: #333;
   margin-bottom: 8px;
 }
 
 .columns > div > div:nth-child(2) p:nth-child(3) {
-  /* Privacy disclaimer */
   font-size: 14px;
   color: #666;
   margin-bottom: 24px;
 }
 
 .columns > div > div:nth-child(2) p:nth-child(4) {
-  /* "Subscribe" button style */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,11 +278,8 @@
   cursor: pointer;
   box-shadow: 0 2px 8px rgb(40 166 122 / 15%);
   margin-bottom: 0;
-
-  /* Optionally add arrow icon as :after content */
 }
 
-/* Third Div (Links Footer): */
 .columns > div > div:nth-child(3) {
   background: #B2E3D3;
   border-radius: 12px;
@@ -305,7 +287,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 180px; /* or adjust as needed */
+  min-width: 180px;
 }
 
 .columns > div > div:nth-child(3) a {
@@ -316,7 +298,6 @@
   font-size: 15px;
 }
 
-/* Responsiveness */
 @media (width <= 600px) {
   .columns {
     min-width: unset;
@@ -331,5 +312,249 @@
   .columns > div > div:nth-child(3) {
     min-width: 0;
     padding: 12px 8px;
+  }
+}
+
+
+/* 3-column grid layout for the main row */
+.columns .columns-wrapper .block.columns .columns9 {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  align-items: center;
+  gap: 0 40px;
+  padding: 42px 0;
+  background: #d56f1c;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 164px;
+}
+
+@media (width <= 900px) {
+  .columns .columns-wrapper .block.columns .columns9 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 18px 0;
+    padding: 24px 0;
+  }
+}
+
+/* --- Left: Logo (first column) --- */
+.columns .columns-wrapper .block.columns .columns9 div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  min-width: 160px;
+}
+
+.columns .columns-wrapper .block.columns .columns9 div:first-child p {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+/* --- Middle: Form (second column) --- */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 230px;
+  max-width: 370px;
+  gap: 10px;
+  padding: 0;
+}
+
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p {
+  color: #000;
+  margin: 0 0 0.2em;
+  padding: 0;
+  width: 100%;
+  line-height: 1.3;
+}
+
+/* Small heading */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p:first-child {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 2px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+/* Simulated input box styling */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p:nth-child(2) {
+  background: #fbeee2;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #000;
+  width: 100%;
+  max-width: 240px;
+  margin: 0;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Checkbox + legal text row */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p:nth-child(3) {
+  display: flex;
+  align-items: flex-start;
+  font-size: 10px;
+  line-height: 1.3;
+  gap: 0.4em;
+  max-width: 240px;
+  width: 100%;
+  padding-left: 21px;
+  position: relative;
+  margin: 0;
+}
+
+/* Simulated checkbox (no content property) */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p:nth-child(3)::before {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background: #fff;
+  margin-right: 8px;
+  margin-top: 2.5px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 1.2px;
+}
+
+/* Underlined link in legal text */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p:nth-child(3) a {
+  color: #000;
+  text-decoration: underline;
+  font-size: 10px;
+  margin: 0 2px;
+}
+
+/* Subscribe button style */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p:last-child {
+  background: #e6e7e9;
+  color: #000;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 30px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+  border: 1px solid #bcbcbc;
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+  min-width: 116px;
+  max-width: 240px;
+  margin-bottom: 0;
+  align-self: center;
+  transition: filter 0.18s;
+}
+
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(2) p:last-child:hover {
+  filter: brightness(0.97);
+}
+
+/* --- Right: Navigation (third column) --- */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  min-width: 160px;
+  padding-left: 8px;
+  gap: 0;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(3) p {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 11px;
+  color: #000;
+  margin: 0;
+  padding: 0 14px;
+  min-width: 78px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+/* Divider between nav columns */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(3) p:first-child {
+  border-right: 1px solid #000;
+  padding-right: 18px;
+}
+
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(3) p:last-child {
+  padding-left: 18px;
+}
+
+/* Nav links */
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(3) a {
+  color: #000;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 1.5;
+  transition: color 0.2s, text-decoration 0.2s;
+  text-align: left;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.columns .columns-wrapper .block.columns .columns9 div:nth-child(3) a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (width <= 900px) {
+  .columns .columns-wrapper .block.columns .columns9 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 16px 0;
+    padding: 16px 0;
+  }
+
+  .columns .columns-wrapper .block.columns .columns9 div,
+  .columns .columns-wrapper .block.columns .columns9 div:nth-child(3) {
+    min-width: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .columns .columns-wrapper .block.columns .columns9 div:nth-child(3) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .columns .columns-wrapper .block.columns .columns9 div:nth-child(3) p {
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    font-size: 12px;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .columns .columns-wrapper .block.columns .columns9 div:nth-child(3) p:first-child,
+  .columns .columns-wrapper .block.columns .columns9 div:nth-child(3) p:last-child {
+    border-right: none;
+    padding: 0 10px;
   }
 }
